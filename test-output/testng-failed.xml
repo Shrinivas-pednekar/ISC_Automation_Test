@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [IS Catalauge Automation Tests]">
+  <listeners>
+    <listener class-name="isCatalogue_test.Listeners"/>
+  </listeners>
+  <test parallel="none" name="Validating all links and pages present under Home page test(failed)">
+    <classes>
+      <class name="portfolio_test.user.TC01_UserLoginTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- portfolio_test.user.TC01_UserLoginTest -->
+      <class name="portfolio_test.user.TC02_HomePage">
+        <methods>
+          <include name="initialize"/>
+          <include name="VerifyProductInnovationDevelopmentServicesPageOnHomepage"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- portfolio_test.user.TC02_HomePage -->
+    </classes>
+  </test> <!-- Validating all links and pages present under Home page test(failed) -->
+</suite> <!-- Failed suite [IS Catalauge Automation Tests] -->

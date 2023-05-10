@@ -1,0 +1,8 @@
+portfolio_test\user\TC06_ResourcesPage.class
+portfolio_test\user\TC01_UserLoginTest.class
+portfolio_test\user\TC04_CustomerEvidenceTest.class
+portfolio_test\user\TC05_CampaignsPage.class
+portfolio_test\user\TC02_HomePage.class
+portfolio_test\user\TC03_CatalogueTest.class
+isCatalogue_test\Listeners.class
+portfolio_test\user\TC07_BrokenLinkChecker.class

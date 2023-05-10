@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Qubit Automation Customer Tests]">
+  <listeners>
+    <listener class-name="qubit_test.Listeners"/>
+  </listeners>
+  <test parallel="none" name="Validating on Details page create Search Incentive intake test(failed)">
+    <classes>
+      <class name="qubit_test.user.TC01_UserLoginTest">
+        <methods>
+          <include name="initialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- qubit_test.user.TC01_UserLoginTest -->
+      <class name="qubit_test.user.TC02_DetailsPageTest">
+        <methods>
+          <include name="saveBusinessRulesTest"/>
+          <include name="selectBusinessRulesTabTest"/>
+          <include name="verifySearchIncentivesEntitiesTest"/>
+          <include name="selectPartnerSupplierTabTest"/>
+          <include name="verifyFinancialsEntitiesTest"/>
+          <include name="selectFinancialsTabTest"/>
+          <include name="saveFinancialsRulesTest"/>
+          <include name="teardown"/>
+          <include name="uploadPartnerListTest"/>
+          <include name="selectSummaryTabTest"/>
+          <include name="initialize"/>
+          <include name="savePartnerListTest"/>
+          <include name="selectRatesTabTest"/>
+          <include name="saveRateCardTest"/>
+          <include name="uploadRateCardTest"/>
+        </methods>
+      </class> <!-- qubit_test.user.TC02_DetailsPageTest -->
+    </classes>
+  </test> <!-- Validating on Details page create Search Incentive intake test(failed) -->
+</suite> <!-- Failed suite [Qubit Automation Customer Tests] -->

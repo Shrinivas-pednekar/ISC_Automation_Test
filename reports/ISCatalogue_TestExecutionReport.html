@@ -1,0 +1,4161 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Test Results</title>
+        <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+        <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+	    <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@74cc0d02f0116d1b5665bd07f6aea22c71033efe/spark/css/spark-style.css" rel="stylesheet" />
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<style type="text/css">
+
+</style></head>    <script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<body class="spa -report standard">
+    <div class="app header-dark side-nav-folded">
+        <div class="layout">
+<div class="header navbar">
+    <div class="header-container">
+        <div class="nav-logo">
+          <a href="index.html">
+            <div class="logo logo-dark" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+            <div class="logo logo-white" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+          </a>
+        </div>
+        <ul class="nav-left">
+          <li>
+            <a class="sidenav-fold-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+            <a class="sidenav-expand-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+          <li class="search-box">
+            <a class="search-toggle" href="javascript:void(0);">
+              <i class="search-icon fa fa-search"></i>
+              <i class="search-icon-close fa fa-close"></i>
+            </a>
+          </li>
+          <li class="search-input">
+            <input id="search-tests" class="form-control" type="text" placeholder="Type to search...">
+          </li>
+        </ul>
+        <ul class="nav-right">
+          <li class="m-r-10">
+            <a href="#">
+              <span class="badge badge-primary">Porfolio Automation Results</span>
+            </a>
+          </li>
+            <li class="m-r-10">
+                <a href="#">
+                    <span class="badge badge-primary">May 10, 2023 02:10:49 PM</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div><div class="side-nav side-nav-folded">
+  <div class="side-nav-inner">
+    <ul class="side-nav-menu scrollable">
+      <li class="nav-item dropdown" onclick="toggleView('test-view')">
+        <a id="nav-test" class="dropdown-toggle" href="index.html">
+          <span class="icon-holder">
+            <i class="fa fa-align-left"></i>
+          </span>
+          <span class="title">Tests</span>
+        </a>
+      </li>
+            <li class="nav-item dropdown" onclick="toggleView('exception-view')">
+        <a id="nav-ex" class="dropdown-toggle" href="exception.html">
+          <span class="icon-holder">
+            <i class="fa fa-bug"></i>
+          </span>
+          <span class="title">Exception</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+        <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
+          <span class="icon-holder">
+            <i class="fa fa-bar-chart"></i>
+          </span>
+          <span class="title">Dashboard</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>            <div class="page-container">
+                <div class="main-content">
+<div class="test-wrapper row test-view">
+	<div class="test-list">
+		<div class="test-list-tools">
+			<ul class="tools pull-left">
+				<li>
+					<a href="">
+					<span class="font-size-14">Tests</span>
+					</a>
+				</li>
+			</ul>
+			<ul class="tools text-right">
+				<li class="user-profile dropdown dropdown-animated scale-left">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					<i class="fa fa-exclamation-circle"></i>
+					</a>
+					<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+						<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success pull-right"></span></a>
+						<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>
+						
+						
+						
+						
+						<div class="dropdown-divider"></div>
+						<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="test-list-wrapper scrollable">
+			<ul class="test-list-item">
+				<li class="test-item"  status="pass" test-id="1"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">loginPageTitleTest</p>
+							<p class="duration text-sm">0h 0m 3s+35ms</p>
+							<span class="datetime">14:11:39 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">loginPageTitleTest</h5>
+									<span class='badge badge-success'>05.10.2023 14:11:39</span>
+									<span class='badge badge-danger'>05.10.2023 14:11:42</span>
+									<span class='badge badge-default'>0h 0m 3s+35ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:11:42 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="2"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyHomepage</p>
+							<p class="duration text-sm">0h 0m 0s+16ms</p>
+							<span class="datetime">14:12:30 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyHomepage</h5>
+									<span class='badge badge-success'>05.10.2023 14:12:30</span>
+									<span class='badge badge-danger'>05.10.2023 14:12:30</span>
+									<span class='badge badge-default'>0h 0m 0s+16ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:12:30 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="3"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyCatalogueNavigatorOnHomepage</p>
+							<p class="duration text-sm">0h 0m 10s+805ms</p>
+							<span class="datetime">14:12:30 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyCatalogueNavigatorOnHomepage</h5>
+									<span class='badge badge-success'>05.10.2023 14:12:30</span>
+									<span class='badge badge-danger'>05.10.2023 14:12:41</span>
+									<span class='badge badge-default'>0h 0m 10s+805ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:12:41 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="4"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyCustomerEvidenceSectionOnHomepage</p>
+							<p class="duration text-sm">0h 0m 5s+356ms</p>
+							<span class="datetime">14:12:41 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyCustomerEvidenceSectionOnHomepage</h5>
+									<span class='badge badge-success'>05.10.2023 14:12:41</span>
+									<span class='badge badge-danger'>05.10.2023 14:12:46</span>
+									<span class='badge badge-default'>0h 0m 5s+356ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:12:46 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="5"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyViewCampaignPageOnHomepage</p>
+							<p class="duration text-sm">0h 0m 14s+807ms</p>
+							<span class="datetime">14:12:46 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyViewCampaignPageOnHomepage</h5>
+									<span class='badge badge-success'>05.10.2023 14:12:46</span>
+									<span class='badge badge-danger'>05.10.2023 14:13:01</span>
+									<span class='badge badge-default'>0h 0m 14s+807ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:13:01 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="6"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyCloudTransitionServicesPageOnHomepage</p>
+							<p class="duration text-sm">0h 0m 11s+147ms</p>
+							<span class="datetime">14:13:01 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyCloudTransitionServicesPageOnHomepage</h5>
+									<span class='badge badge-success'>05.10.2023 14:13:01</span>
+									<span class='badge badge-danger'>05.10.2023 14:13:12</span>
+									<span class='badge badge-default'>0h 0m 11s+147ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:13:12 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="7"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">VerifyCloudManagementOperationsPageOnHomepage</p>
+							<p class="duration text-sm">0h 0m 10s+687ms</p>
+							<span class="datetime">14:13:12 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">VerifyCloudManagementOperationsPageOnHomepage</h5>
+									<span class='badge badge-success'>05.10.2023 14:13:12</span>
+									<span class='badge badge-danger'>05.10.2023 14:13:23</span>
+									<span class='badge badge-default'>0h 0m 10s+687ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:13:23 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="8"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">VerifyDataStrategyPageOnHomepage</p>
+							<p class="duration text-sm">0h 0m 19s+120ms</p>
+							<span class="datetime">14:13:23 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">VerifyDataStrategyPageOnHomepage</h5>
+									<span class='badge badge-success'>05.10.2023 14:13:23</span>
+									<span class='badge badge-danger'>05.10.2023 14:13:42</span>
+									<span class='badge badge-default'>0h 0m 19s+120ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:13:42 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="9"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">VerifyViewalltopoffersPageOnHomepage</p>
+							<p class="duration text-sm">0h 0m 13s+212ms</p>
+							<span class="datetime">14:13:42 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">VerifyViewalltopoffersPageOnHomepage</h5>
+									<span class='badge badge-success'>05.10.2023 14:13:42</span>
+									<span class='badge badge-danger'>05.10.2023 14:13:55</span>
+									<span class='badge badge-default'>0h 0m 13s+212ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:13:55 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="10"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">VerifyCustomerEvidenceSearchPageFromHomepage</p>
+							<p class="duration text-sm">0h 0m 32s+281ms</p>
+							<span class="datetime">14:13:55 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">VerifyCustomerEvidenceSearchPageFromHomepage</h5>
+									<span class='badge badge-success'>05.10.2023 14:13:55</span>
+									<span class='badge badge-danger'>05.10.2023 14:14:27</span>
+									<span class='badge badge-default'>0h 0m 32s+281ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:14:27 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="11"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">VerifyEurekaPageFromHomepage</p>
+							<p class="duration text-sm">0h 0m 8s+33ms</p>
+							<span class="datetime">14:14:27 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">VerifyEurekaPageFromHomepage</h5>
+									<span class='badge badge-success'>05.10.2023 14:14:27</span>
+									<span class='badge badge-danger'>05.10.2023 14:14:36</span>
+									<span class='badge badge-default'>0h 0m 8s+33ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:14:36 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="12"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyEmergingInnovationEngineeringPageOnCataloguePage</p>
+							<p class="duration text-sm">0h 0m 38s+172ms</p>
+							<span class="datetime">14:15:24 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyEmergingInnovationEngineeringPageOnCataloguePage</h5>
+									<span class='badge badge-success'>05.10.2023 14:15:24</span>
+									<span class='badge badge-danger'>05.10.2023 14:16:02</span>
+									<span class='badge badge-default'>0h 0m 38s+172ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:16:02 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="13"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyAdoptionChangeandServicesManagementPageOnCataloguePage</p>
+							<p class="duration text-sm">0h 0m 48s+620ms</p>
+							<span class="datetime">14:16:02 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyAdoptionChangeandServicesManagementPageOnCataloguePage</h5>
+									<span class='badge badge-success'>05.10.2023 14:16:02</span>
+									<span class='badge badge-danger'>05.10.2023 14:16:50</span>
+									<span class='badge badge-default'>0h 0m 48s+620ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:16:50 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="14"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyBusinessAppsPageButtonOnCataloguePage</p>
+							<p class="duration text-sm">0h 1m 11s+724ms</p>
+							<span class="datetime">14:16:50 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyBusinessAppsPageButtonOnCataloguePage</h5>
+									<span class='badge badge-success'>05.10.2023 14:16:50</span>
+									<span class='badge badge-danger'>05.10.2023 14:18:02</span>
+									<span class='badge badge-default'>0h 1m 11s+724ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:18:02 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="15"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyCrossSolutionAreaandFunctionalSolutionOnCataloguePage</p>
+							<p class="duration text-sm">0h 0m 37s+259ms</p>
+							<span class="datetime">14:18:02 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyCrossSolutionAreaandFunctionalSolutionOnCataloguePage</h5>
+									<span class='badge badge-success'>05.10.2023 14:18:02</span>
+									<span class='badge badge-danger'>05.10.2023 14:18:39</span>
+									<span class='badge badge-default'>0h 0m 37s+259ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:18:39 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="16"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyDigitalandApplicationInnovationOnCataloguePage</p>
+							<p class="duration text-sm">0h 0m 57s+373ms</p>
+							<span class="datetime">14:18:39 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyDigitalandApplicationInnovationOnCataloguePage</h5>
+									<span class='badge badge-success'>05.10.2023 14:18:39</span>
+									<span class='badge badge-danger'>05.10.2023 14:19:37</span>
+									<span class='badge badge-default'>0h 0m 57s+373ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:19:37 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="17"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyDataandAIOnCataloguePage</p>
+							<p class="duration text-sm">0h 1m 4s+300ms</p>
+							<span class="datetime">14:19:37 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyDataandAIOnCataloguePage</h5>
+									<span class='badge badge-success'>05.10.2023 14:19:37</span>
+									<span class='badge badge-danger'>05.10.2023 14:20:41</span>
+									<span class='badge badge-default'>0h 1m 4s+300ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:20:41 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="18"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyInfrastructureOnCataloguePage</p>
+							<p class="duration text-sm">0h 0m 54s+681ms</p>
+							<span class="datetime">14:20:41 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyInfrastructureOnCataloguePage</h5>
+									<span class='badge badge-success'>05.10.2023 14:20:41</span>
+									<span class='badge badge-danger'>05.10.2023 14:21:36</span>
+									<span class='badge badge-default'>0h 0m 54s+681ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:21:36 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="19"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyModernWorkOnCataloguePage</p>
+							<p class="duration text-sm">0h 1m 5s+550ms</p>
+							<span class="datetime">14:21:36 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyModernWorkOnCataloguePage</h5>
+									<span class='badge badge-success'>05.10.2023 14:21:36</span>
+									<span class='badge badge-danger'>05.10.2023 14:22:41</span>
+									<span class='badge badge-default'>0h 1m 5s+550ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:22:41 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="20"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifySecurityOnCataloguePage</p>
+							<p class="duration text-sm">0h 2m 24s+687ms</p>
+							<span class="datetime">14:22:41 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifySecurityOnCataloguePage</h5>
+									<span class='badge badge-success'>05.10.2023 14:22:41</span>
+									<span class='badge badge-danger'>05.10.2023 14:25:06</span>
+									<span class='badge badge-default'>0h 2m 24s+687ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:25:06 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="21"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyAutomotiveMobilityandTransportationOnCataloguePage</p>
+							<p class="duration text-sm">0h 0m 52s+786ms</p>
+							<span class="datetime">14:25:06 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyAutomotiveMobilityandTransportationOnCataloguePage</h5>
+									<span class='badge badge-success'>05.10.2023 14:25:06</span>
+									<span class='badge badge-danger'>05.10.2023 14:25:59</span>
+									<span class='badge badge-default'>0h 0m 52s+786ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:25:59 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="22"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyCrossIndustryOnCataloguePage</p>
+							<p class="duration text-sm">0h 0m 16s+340ms</p>
+							<span class="datetime">14:25:59 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyCrossIndustryOnCataloguePage</h5>
+									<span class='badge badge-success'>05.10.2023 14:25:59</span>
+									<span class='badge badge-danger'>05.10.2023 14:26:15</span>
+									<span class='badge badge-default'>0h 0m 16s+340ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:26:15 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="23"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyDefenseandIntelligenceOnCataloguePage</p>
+							<p class="duration text-sm">0h 0m 16s+680ms</p>
+							<span class="datetime">14:26:15 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyDefenseandIntelligenceOnCataloguePage</h5>
+									<span class='badge badge-success'>05.10.2023 14:26:15</span>
+									<span class='badge badge-danger'>05.10.2023 14:26:32</span>
+									<span class='badge badge-default'>0h 0m 16s+680ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:26:32 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="24"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyEducationOnCataloguePage</p>
+							<p class="duration text-sm">0h 0m 16s+755ms</p>
+							<span class="datetime">14:26:32 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyEducationOnCataloguePage</h5>
+									<span class='badge badge-success'>05.10.2023 14:26:32</span>
+									<span class='badge badge-danger'>05.10.2023 14:26:48</span>
+									<span class='badge badge-default'>0h 0m 16s+755ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:26:48 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="25"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyEnergyandResourcesOnCataloguePage</p>
+							<p class="duration text-sm">0h 0m 21s+428ms</p>
+							<span class="datetime">14:26:48 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyEnergyandResourcesOnCataloguePage</h5>
+									<span class='badge badge-success'>05.10.2023 14:26:48</span>
+									<span class='badge badge-danger'>05.10.2023 14:27:10</span>
+									<span class='badge badge-default'>0h 0m 21s+428ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:27:10 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="26"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyFinancialServicesOnCataloguePage</p>
+							<p class="duration text-sm">0h 0m 20s+330ms</p>
+							<span class="datetime">14:27:10 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyFinancialServicesOnCataloguePage</h5>
+									<span class='badge badge-success'>05.10.2023 14:27:10</span>
+									<span class='badge badge-danger'>05.10.2023 14:27:30</span>
+									<span class='badge badge-default'>0h 0m 20s+330ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:27:30 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="27"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyGovernmentOnCataloguePage</p>
+							<p class="duration text-sm">0h 0m 16s+63ms</p>
+							<span class="datetime">14:27:30 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyGovernmentOnCataloguePage</h5>
+									<span class='badge badge-success'>05.10.2023 14:27:30</span>
+									<span class='badge badge-danger'>05.10.2023 14:27:46</span>
+									<span class='badge badge-default'>0h 0m 16s+63ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:27:46 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="28"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyHealthcareOnCataloguePage</p>
+							<p class="duration text-sm">0h 0m 18s+841ms</p>
+							<span class="datetime">14:27:46 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyHealthcareOnCataloguePage</h5>
+									<span class='badge badge-success'>05.10.2023 14:27:46</span>
+									<span class='badge badge-danger'>05.10.2023 14:28:05</span>
+									<span class='badge badge-default'>0h 0m 18s+841ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:28:05 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="29"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyIndustrialsandManufacturingOnCataloguePage</p>
+							<p class="duration text-sm">0h 1m 34s+580ms</p>
+							<span class="datetime">14:28:05 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyIndustrialsandManufacturingOnCataloguePage</h5>
+									<span class='badge badge-success'>05.10.2023 14:28:05</span>
+									<span class='badge badge-danger'>05.10.2023 14:29:40</span>
+									<span class='badge badge-default'>0h 1m 34s+580ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:29:40 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="30"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyRetailandConsumerGoodsOnCataloguePage</p>
+							<p class="duration text-sm">0h 0m 16s+748ms</p>
+							<span class="datetime">14:29:40 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyRetailandConsumerGoodsOnCataloguePage</h5>
+									<span class='badge badge-success'>05.10.2023 14:29:40</span>
+									<span class='badge badge-danger'>05.10.2023 14:29:56</span>
+									<span class='badge badge-default'>0h 0m 16s+748ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:29:56 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="31"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifySustainabilityOnCataloguePage</p>
+							<p class="duration text-sm">0h 0m 20s+323ms</p>
+							<span class="datetime">14:29:56 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifySustainabilityOnCataloguePage</h5>
+									<span class='badge badge-success'>05.10.2023 14:29:56</span>
+									<span class='badge badge-danger'>05.10.2023 14:30:17</span>
+									<span class='badge badge-default'>0h 0m 20s+323ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:30:17 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="32"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyTelecommunicationsandMediaOnCataloguePage</p>
+							<p class="duration text-sm">0h 0m 13s+342ms</p>
+							<span class="datetime">14:30:17 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyTelecommunicationsandMediaOnCataloguePage</h5>
+									<span class='badge badge-success'>05.10.2023 14:30:17</span>
+									<span class='badge badge-danger'>05.10.2023 14:30:30</span>
+									<span class='badge badge-default'>0h 0m 13s+342ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:30:30 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="33"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyCustomerEvidanceHomePageOnCustomerEvidence</p>
+							<p class="duration text-sm">0h 0m 17s+571ms</p>
+							<span class="datetime">14:31:18 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyCustomerEvidanceHomePageOnCustomerEvidence</h5>
+									<span class='badge badge-success'>05.10.2023 14:31:18</span>
+									<span class='badge badge-danger'>05.10.2023 14:31:36</span>
+									<span class='badge badge-default'>0h 0m 17s+571ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:31:36 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="34"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyCarouselOnCustomerEvidence</p>
+							<p class="duration text-sm">0h 0m 0s+57ms</p>
+							<span class="datetime">14:31:36 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyCarouselOnCustomerEvidence</h5>
+									<span class='badge badge-success'>05.10.2023 14:31:36</span>
+									<span class='badge badge-danger'>05.10.2023 14:31:36</span>
+									<span class='badge badge-default'>0h 0m 0s+57ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:31:36 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="35"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifysubmitNewStoryPageOnCustomerEvidence</p>
+							<p class="duration text-sm">0h 0m 13s+518ms</p>
+							<span class="datetime">14:31:36 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifysubmitNewStoryPageOnCustomerEvidence</h5>
+									<span class='badge badge-success'>05.10.2023 14:31:36</span>
+									<span class='badge badge-danger'>05.10.2023 14:31:49</span>
+									<span class='badge badge-default'>0h 0m 13s+518ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:31:49 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="36"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyCustomerEvidanceSearchFunctionOnCustomerEvidence</p>
+							<p class="duration text-sm">0h 0m 12s+777ms</p>
+							<span class="datetime">14:31:49 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyCustomerEvidanceSearchFunctionOnCustomerEvidence</h5>
+									<span class='badge badge-success'>05.10.2023 14:31:49</span>
+									<span class='badge badge-danger'>05.10.2023 14:32:02</span>
+									<span class='badge badge-default'>0h 0m 12s+777ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:32:02 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="37"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyAutomotiveMobilityandTransportationCustomerStoriesSearchButtonOnCustomerEvidence</p>
+							<p class="duration text-sm">0h 0m 19s+789ms</p>
+							<span class="datetime">14:32:02 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyAutomotiveMobilityandTransportationCustomerStoriesSearchButtonOnCustomerEvidence</h5>
+									<span class='badge badge-success'>05.10.2023 14:32:02</span>
+									<span class='badge badge-danger'>05.10.2023 14:32:22</span>
+									<span class='badge badge-default'>0h 0m 19s+789ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:32:22 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="38"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyCrossIndustryCustomerStoriesSearchButtonOnCustomerEvidence</p>
+							<p class="duration text-sm">0h 0m 7s+957ms</p>
+							<span class="datetime">14:32:22 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyCrossIndustryCustomerStoriesSearchButtonOnCustomerEvidence</h5>
+									<span class='badge badge-success'>05.10.2023 14:32:22</span>
+									<span class='badge badge-danger'>05.10.2023 14:32:30</span>
+									<span class='badge badge-default'>0h 0m 7s+957ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:32:30 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="39"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyDefenseandIntelligenceCustomerStoriesSearchButtonOnCustomerEvidence</p>
+							<p class="duration text-sm">0h 0m 43s+817ms</p>
+							<span class="datetime">14:32:30 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyDefenseandIntelligenceCustomerStoriesSearchButtonOnCustomerEvidence</h5>
+									<span class='badge badge-success'>05.10.2023 14:32:30</span>
+									<span class='badge badge-danger'>05.10.2023 14:33:14</span>
+									<span class='badge badge-default'>0h 0m 43s+817ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:33:14 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="40"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyEducationCustomerStoriesSearchButtonOnCustomerEvidence</p>
+							<p class="duration text-sm">0h 0m 29s+919ms</p>
+							<span class="datetime">14:33:14 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyEducationCustomerStoriesSearchButtonOnCustomerEvidence</h5>
+									<span class='badge badge-success'>05.10.2023 14:33:14</span>
+									<span class='badge badge-danger'>05.10.2023 14:33:43</span>
+									<span class='badge badge-default'>0h 0m 29s+919ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:33:43 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="fail" test-id="41"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar fail-bg">
+						<i class="fa fa-times text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyEnergyandResourcesCustomerStoriesSearchButtonOnCustomerEvidence</p>
+							<p class="duration text-sm">0h 1m 3s+577ms</p>
+							<span class="datetime">14:33:43 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-fail">verifyEnergyandResourcesCustomerStoriesSearchButtonOnCustomerEvidence</h5>
+									<span class='badge badge-success'>05.10.2023 14:33:43</span>
+									<span class='badge badge-danger'>05.10.2023 14:34:47</span>
+									<span class='badge badge-default'>0h 1m 3s+577ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>2:34:47 PM</td>
+				<td>
+						Error Occurred. Test Failed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>2:34:47 PM</td>
+				<td>
+						<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[EdgeDriver: msedge on WINDOWS (87a95b10ebb9524c0aed0a1695a5316c)] -> xpath: //h2[@id='lblCounter']] (tried for 50 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at resources.Utilities.waitForElementToBeVisible(Utilities.java:146)
+	at pageObjects.HomePage.CustomerEvidenceSearchResultwaitForElementToBeVisible(HomePage.java:141)
+	at portfolio_test.user.TC04_CustomerEvidenceTest.verifyEnergyandResourcesCustomerStoriesSearchButtonOnCustomerEvidence(TC04_CustomerEvidenceTest.java:184)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[@id='lblCounter']"}
+  (Session info: MicrosoftEdge=112.0.1722.68)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HJNZL000593', ip: '192.168.1.11', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 112.0.1722.68, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:54164}, msedge: {msedgedriverVersion: 112.0.1722.71 (0dac4e4620b8..., userDataDir: C:\Users\V-SPED~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 87a95b10ebb9524c0aed0a1695a5316c
+*** Element info: {Using=xpath, value=//h2[@id='lblCounter']}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 28 more
+</textarea>
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\v-spednekar\eclipse-workspace\ISCatalogue_Automation\screenshots\verifyEnergyandResourcesCustomerStoriesSearchButtonOnCustomerEvidence.png' src='C:\Users\v-spednekar\eclipse-workspace\ISCatalogue_Automation\screenshots\verifyEnergyandResourcesCustomerStoriesSearchButtonOnCustomerEvidence.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="42"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyFinancialServicesCustomerStoriesSearchButtonOnCustomerEvidence</p>
+							<p class="duration text-sm">0h 0m 26s+236ms</p>
+							<span class="datetime">14:34:48 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyFinancialServicesCustomerStoriesSearchButtonOnCustomerEvidence</h5>
+									<span class='badge badge-success'>05.10.2023 14:34:48</span>
+									<span class='badge badge-danger'>05.10.2023 14:35:14</span>
+									<span class='badge badge-default'>0h 0m 26s+236ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:35:14 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="43"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyGovernmentCustomerStoriesSearchButtonOnCustomerEvidence</p>
+							<p class="duration text-sm">0h 0m 37s+896ms</p>
+							<span class="datetime">14:35:14 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyGovernmentCustomerStoriesSearchButtonOnCustomerEvidence</h5>
+									<span class='badge badge-success'>05.10.2023 14:35:14</span>
+									<span class='badge badge-danger'>05.10.2023 14:35:52</span>
+									<span class='badge badge-default'>0h 0m 37s+896ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:35:52 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="44"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyHealthcareCustomerStoriesSearchButtonOnCustomerEvidence</p>
+							<p class="duration text-sm">0h 0m 15s+125ms</p>
+							<span class="datetime">14:35:52 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyHealthcareCustomerStoriesSearchButtonOnCustomerEvidence</h5>
+									<span class='badge badge-success'>05.10.2023 14:35:52</span>
+									<span class='badge badge-danger'>05.10.2023 14:36:07</span>
+									<span class='badge badge-default'>0h 0m 15s+125ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:36:07 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="45"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyIndustrialandManufacturingCustomerStoriesSearchButtonOnCustomerEvidence</p>
+							<p class="duration text-sm">0h 0m 25s+540ms</p>
+							<span class="datetime">14:36:07 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyIndustrialandManufacturingCustomerStoriesSearchButtonOnCustomerEvidence</h5>
+									<span class='badge badge-success'>05.10.2023 14:36:07</span>
+									<span class='badge badge-danger'>05.10.2023 14:36:32</span>
+									<span class='badge badge-default'>0h 0m 25s+540ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:36:32 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="46"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyRetailandConsumerGoodsCustomerStoriesSearchButtonOnCustomerEvidence</p>
+							<p class="duration text-sm">0h 0m 25s+428ms</p>
+							<span class="datetime">14:36:32 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyRetailandConsumerGoodsCustomerStoriesSearchButtonOnCustomerEvidence</h5>
+									<span class='badge badge-success'>05.10.2023 14:36:32</span>
+									<span class='badge badge-danger'>05.10.2023 14:36:58</span>
+									<span class='badge badge-default'>0h 0m 25s+428ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:36:58 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="47"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifySustainabilityCustomerStoriesSearchButtonOnCustomerEvidence</p>
+							<p class="duration text-sm">0h 0m 22s+439ms</p>
+							<span class="datetime">14:36:58 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifySustainabilityCustomerStoriesSearchButtonOnCustomerEvidence</h5>
+									<span class='badge badge-success'>05.10.2023 14:36:58</span>
+									<span class='badge badge-danger'>05.10.2023 14:37:20</span>
+									<span class='badge badge-default'>0h 0m 22s+439ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:37:20 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="48"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyTelecommunicationsandMediaCustomerStoriesSearchButtonOnCustomerEvidence</p>
+							<p class="duration text-sm">0h 0m 20s+996ms</p>
+							<span class="datetime">14:37:20 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyTelecommunicationsandMediaCustomerStoriesSearchButtonOnCustomerEvidence</h5>
+									<span class='badge badge-success'>05.10.2023 14:37:20</span>
+									<span class='badge badge-danger'>05.10.2023 14:37:41</span>
+									<span class='badge badge-default'>0h 0m 20s+996ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:37:41 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="49"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyBusinessAppsCustomerStoriesSearchButtonOnCustomerEvidence</p>
+							<p class="duration text-sm">0h 0m 40s+94ms</p>
+							<span class="datetime">14:37:41 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyBusinessAppsCustomerStoriesSearchButtonOnCustomerEvidence</h5>
+									<span class='badge badge-success'>05.10.2023 14:37:41</span>
+									<span class='badge badge-danger'>05.10.2023 14:38:21</span>
+									<span class='badge badge-default'>0h 0m 40s+94ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:38:21 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="50"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyDataAICustomerStoriesSearchButtonOnCustomerEvidence</p>
+							<p class="duration text-sm">0h 0m 27s+492ms</p>
+							<span class="datetime">14:38:21 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyDataAICustomerStoriesSearchButtonOnCustomerEvidence</h5>
+									<span class='badge badge-success'>05.10.2023 14:38:21</span>
+									<span class='badge badge-danger'>05.10.2023 14:38:49</span>
+									<span class='badge badge-default'>0h 0m 27s+492ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:38:49 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="51"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyDigitalandApplicationInnovationCustomerStoriesSearchButtonOnCustomerEvidence</p>
+							<p class="duration text-sm">0h 0m 27s+899ms</p>
+							<span class="datetime">14:38:49 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyDigitalandApplicationInnovationCustomerStoriesSearchButtonOnCustomerEvidence</h5>
+									<span class='badge badge-success'>05.10.2023 14:38:49</span>
+									<span class='badge badge-danger'>05.10.2023 14:39:17</span>
+									<span class='badge badge-default'>0h 0m 27s+899ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:39:17 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="52"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyInfrastructureCustomerStoriesSearchButtonOnCustomerEvidence</p>
+							<p class="duration text-sm">0h 0m 18s+517ms</p>
+							<span class="datetime">14:39:17 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyInfrastructureCustomerStoriesSearchButtonOnCustomerEvidence</h5>
+									<span class='badge badge-success'>05.10.2023 14:39:17</span>
+									<span class='badge badge-danger'>05.10.2023 14:39:35</span>
+									<span class='badge badge-default'>0h 0m 18s+517ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:39:35 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="53"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyModernWorkCustomerStoriesSearchButtonOnCustomerEvidence</p>
+							<p class="duration text-sm">0h 0m 25s+113ms</p>
+							<span class="datetime">14:39:35 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyModernWorkCustomerStoriesSearchButtonOnCustomerEvidence</h5>
+									<span class='badge badge-success'>05.10.2023 14:39:35</span>
+									<span class='badge badge-danger'>05.10.2023 14:40:00</span>
+									<span class='badge badge-default'>0h 0m 25s+113ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:40:00 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="54"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifySecurityCustomerStoriesSearchButtonOnCustomerEvidence</p>
+							<p class="duration text-sm">0h 0m 43s+987ms</p>
+							<span class="datetime">14:40:00 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifySecurityCustomerStoriesSearchButtonOnCustomerEvidence</h5>
+									<span class='badge badge-success'>05.10.2023 14:40:00</span>
+									<span class='badge badge-danger'>05.10.2023 14:40:44</span>
+									<span class='badge badge-default'>0h 0m 43s+987ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:40:44 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="55"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyWinWiresCustomerStoriesSearchButtonOnCustomerEvidence</p>
+							<p class="duration text-sm">0h 0m 27s+317ms</p>
+							<span class="datetime">14:40:44 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyWinWiresCustomerStoriesSearchButtonOnCustomerEvidence</h5>
+									<span class='badge badge-success'>05.10.2023 14:40:44</span>
+									<span class='badge badge-danger'>05.10.2023 14:41:12</span>
+									<span class='badge badge-default'>0h 0m 27s+317ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:41:12 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="56"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyDeliveryStoriesCustomerStoriesSearchButtonOnCustomerEvidence</p>
+							<p class="duration text-sm">0h 0m 22s+430ms</p>
+							<span class="datetime">14:41:12 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyDeliveryStoriesCustomerStoriesSearchButtonOnCustomerEvidence</h5>
+									<span class='badge badge-success'>05.10.2023 14:41:12</span>
+									<span class='badge badge-danger'>05.10.2023 14:41:34</span>
+									<span class='badge badge-default'>0h 0m 22s+430ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:41:34 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="57"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyclickOncustomerEvidenceWinWiresMenuButtonOnCustomerEvidence</p>
+							<p class="duration text-sm">0h 0m 27s+753ms</p>
+							<span class="datetime">14:41:34 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyclickOncustomerEvidenceWinWiresMenuButtonOnCustomerEvidence</h5>
+									<span class='badge badge-success'>05.10.2023 14:41:34</span>
+									<span class='badge badge-danger'>05.10.2023 14:42:02</span>
+									<span class='badge badge-default'>0h 0m 27s+753ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:42:02 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="58"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyCustomerEvidenceDeliveryStoriesMenuButtonOnCustomerEvidence</p>
+							<p class="duration text-sm">0h 0m 25s+40ms</p>
+							<span class="datetime">14:42:02 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyCustomerEvidenceDeliveryStoriesMenuButtonOnCustomerEvidence</h5>
+									<span class='badge badge-success'>05.10.2023 14:42:02</span>
+									<span class='badge badge-danger'>05.10.2023 14:42:27</span>
+									<span class='badge badge-default'>0h 0m 25s+40ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:42:27 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="59"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifySubmitaStoryMenuButtonOncustomerEvidence</p>
+							<p class="duration text-sm">0h 0m 16s+262ms</p>
+							<span class="datetime">14:42:27 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifySubmitaStoryMenuButtonOncustomerEvidence</h5>
+									<span class='badge badge-success'>05.10.2023 14:42:27</span>
+									<span class='badge badge-danger'>05.10.2023 14:42:43</span>
+									<span class='badge badge-default'>0h 0m 16s+262ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:42:43 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="60"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyclickOnAboutCustomerEvidenceMenuButtonOncustomerEvidence</p>
+							<p class="duration text-sm">0h 0m 12s+362ms</p>
+							<span class="datetime">14:42:43 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyclickOnAboutCustomerEvidenceMenuButtonOncustomerEvidence</h5>
+									<span class='badge badge-success'>05.10.2023 14:42:43</span>
+									<span class='badge badge-danger'>05.10.2023 14:42:55</span>
+									<span class='badge badge-default'>0h 0m 12s+362ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:42:55 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="61"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyTopACRandDVGeneratorsPageFromCampaignsMenu</p>
+							<p class="duration text-sm">0h 0m 15s+788ms</p>
+							<span class="datetime">14:43:44 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyTopACRandDVGeneratorsPageFromCampaignsMenu</h5>
+									<span class='badge badge-success'>05.10.2023 14:43:44</span>
+									<span class='badge badge-danger'>05.10.2023 14:44:00</span>
+									<span class='badge badge-default'>0h 0m 15s+788ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:44:00 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="62"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyDoMoreWithLessPageFromCampaignsMenu</p>
+							<p class="duration text-sm">0h 0m 5s+326ms</p>
+							<span class="datetime">14:44:00 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyDoMoreWithLessPageFromCampaignsMenu</h5>
+									<span class='badge badge-success'>05.10.2023 14:44:00</span>
+									<span class='badge badge-danger'>05.10.2023 14:44:05</span>
+									<span class='badge badge-default'>0h 0m 5s+326ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:44:05 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="fail" test-id="63"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar fail-bg">
+						<i class="fa fa-times text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyISCloudsOverviewPageFromResourcesMenu</p>
+							<p class="duration text-sm">0h 0m 8s+95ms</p>
+							<span class="datetime">14:44:52 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-fail">verifyISCloudsOverviewPageFromResourcesMenu</h5>
+									<span class='badge badge-success'>05.10.2023 14:44:52</span>
+									<span class='badge badge-danger'>05.10.2023 14:45:00</span>
+									<span class='badge badge-default'>0h 0m 8s+95ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>2:45:00 PM</td>
+				<td>
+						Error Occurred. Test Failed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>2:45:00 PM</td>
+				<td>
+						<textarea disabled class="code-block">org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HJNZL000593', ip: '192.168.1.11', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:332)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)
+	at java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:647)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
+	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)
+	at org.openqa.selenium.json.Json.toJson(Json.java:42)
+	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)
+	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
+	at resources.Utilities.clickOnElementUsingActions(Utilities.java:111)
+	at pageObjects.ResourcesPage.clickOnISCloudsOverviewMenuButton(ResourcesPage.java:110)
+	at portfolio_test.user.TC06_ResourcesPage.verifyISCloudsOverviewPageFromResourcesMenu(TC06_ResourcesPage.java:99)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HJNZL000593', ip: '192.168.1.11', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: driver.version: RemoteWebDriver
+		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:279)
+		at org.openqa.selenium.json.Json.toJson(Json.java:44)
+		... 36 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:119)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:328)
+	... 48 more
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'IS Clouds Overview')]"}
+  (Session info: MicrosoftEdge=112.0.1722.68)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HJNZL000593', ip: '192.168.1.11', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 112.0.1722.68, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:54382}, msedge: {msedgedriverVersion: 112.0.1722.71 (0dac4e4620b8..., userDataDir: C:\Users\V-SPED~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 53d20e2d294cb89d8b89f7b9a8dd47d0
+*** Element info: {Using=xpath, value=//a[contains(text(),'IS Clouds Overview')]}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:204)
+	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:155)
+	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:75)
+	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:84)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	... 50 more
+</textarea>
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\v-spednekar\eclipse-workspace\ISCatalogue_Automation\screenshots\verifyISCloudsOverviewPageFromResourcesMenu.png' src='C:\Users\v-spednekar\eclipse-workspace\ISCatalogue_Automation\screenshots\verifyISCloudsOverviewPageFromResourcesMenu.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="64"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyCustomerHubPageFromResourcesMenu</p>
+							<p class="duration text-sm">0h 0m 17s+389ms</p>
+							<span class="datetime">14:45:01 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyCustomerHubPageFromResourcesMenu</h5>
+									<span class='badge badge-success'>05.10.2023 14:45:01</span>
+									<span class='badge badge-danger'>05.10.2023 14:45:18</span>
+									<span class='badge badge-default'>0h 0m 17s+389ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:45:18 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="65"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyDatabookPageFromResourcesMenu</p>
+							<p class="duration text-sm">0h 0m 7s+621ms</p>
+							<span class="datetime">14:45:18 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyDatabookPageFromResourcesMenu</h5>
+									<span class='badge badge-success'>05.10.2023 14:45:18</span>
+									<span class='badge badge-danger'>05.10.2023 14:45:26</span>
+									<span class='badge badge-default'>0h 0m 7s+621ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:45:26 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="66"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyFundingPageFromResourcesMenu</p>
+							<p class="duration text-sm">0h 0m 3s+274ms</p>
+							<span class="datetime">14:45:26 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyFundingPageFromResourcesMenu</h5>
+									<span class='badge badge-success'>05.10.2023 14:45:26</span>
+									<span class='badge badge-danger'>05.10.2023 14:45:29</span>
+									<span class='badge badge-default'>0h 0m 3s+274ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:45:29 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="67"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyAboutISCataloguePageFromResourcesMenu</p>
+							<p class="duration text-sm">0h 0m 3s+297ms</p>
+							<span class="datetime">14:45:29 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyAboutISCataloguePageFromResourcesMenu</h5>
+									<span class='badge badge-success'>05.10.2023 14:45:29</span>
+									<span class='badge badge-danger'>05.10.2023 14:45:33</span>
+									<span class='badge badge-default'>0h 0m 3s+297ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:45:33 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="68"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyEmergingSolutionsPageFromResourcesMenu</p>
+							<p class="duration text-sm">0h 0m 9s+268ms</p>
+							<span class="datetime">14:45:33 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyEmergingSolutionsPageFromResourcesMenu</h5>
+									<span class='badge badge-success'>05.10.2023 14:45:33</span>
+									<span class='badge badge-danger'>05.10.2023 14:45:42</span>
+									<span class='badge badge-default'>0h 0m 9s+268ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:45:42 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="69"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyManageCatalogueSubscriptionsPageFromResourcesMenu</p>
+							<p class="duration text-sm">0h 0m 7s+553ms</p>
+							<span class="datetime">14:45:42 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyManageCatalogueSubscriptionsPageFromResourcesMenu</h5>
+									<span class='badge badge-success'>05.10.2023 14:45:42</span>
+									<span class='badge badge-danger'>05.10.2023 14:45:49</span>
+									<span class='badge badge-default'>0h 0m 7s+553ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:45:49 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="70"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyCatalogueRoadmapPageFromResourcesMenu</p>
+							<p class="duration text-sm">0h 0m 8s+153ms</p>
+							<span class="datetime">14:45:49 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifyCatalogueRoadmapPageFromResourcesMenu</h5>
+									<span class='badge badge-success'>05.10.2023 14:45:49</span>
+									<span class='badge badge-danger'>05.10.2023 14:45:58</span>
+									<span class='badge badge-default'>0h 0m 8s+153ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:45:58 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="71"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifySolutionTruthPageFromResourcesMenu</p>
+							<p class="duration text-sm">0h 0m 3s+450ms</p>
+							<span class="datetime">14:45:58 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">verifySolutionTruthPageFromResourcesMenu</h5>
+									<span class='badge badge-success'>05.10.2023 14:45:58</span>
+									<span class='badge badge-danger'>05.10.2023 14:46:01</span>
+									<span class='badge badge-default'>0h 0m 3s+450ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:46:01 PM</td>
+				<td>
+						Validated test successfully. Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="fail" test-id="72"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar fail-bg">
+						<i class="fa fa-times text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">verifyISSolutionsPlaybookPageFromResourcesMenu</p>
+							<p class="duration text-sm">0h 0m 14s+862ms</p>
+							<span class="datetime">14:46:01 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-fail">verifyISSolutionsPlaybookPageFromResourcesMenu</h5>
+									<span class='badge badge-success'>05.10.2023 14:46:01</span>
+									<span class='badge badge-danger'>05.10.2023 14:46:16</span>
+									<span class='badge badge-default'>0h 0m 14s+862ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>2:46:16 PM</td>
+				<td>
+						Error Occurred. Test Failed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>2:46:16 PM</td>
+				<td>
+						<textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at portfolio_test.user.TC06_ResourcesPage.verifyISSolutionsPlaybookPageFromResourcesMenu(TC06_ResourcesPage.java:206)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</textarea>
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\v-spednekar\eclipse-workspace\ISCatalogue_Automation\screenshots\verifyISSolutionsPlaybookPageFromResourcesMenu.png' src='C:\Users\v-spednekar\eclipse-workspace\ISCatalogue_Automation\screenshots\verifyISSolutionsPlaybookPageFromResourcesMenu.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="test-content scrollable">
+		<div class="test-content-tools">
+			<ul>
+				<li>
+					<a class="back-to-test" href="javascript:void(0)">
+					<i class="fa fa-arrow-left"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="test-content-detail">
+			<div class="detail-body"></div>
+		</div>
+	</div>
+</div><div class="test-wrapper row exception-view attributes-view">
+	<div class="test-list">
+		<div class="test-list-tools">
+			<ul class="tools pull-left">
+				<li>
+					<a href="">
+					<span class="font-size-14">Exception</span>
+					</a>
+				</li>
+			</ul>
+			<ul class="tools text-right">
+				<li>
+					<a href="#">
+					<span class="badge badge-primary">3</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="test-list-wrapper scrollable">
+			<ul class="test-list-item">
+				<li class="test-item">
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">org.openqa.selenium.TimeoutException</p>
+							<p class="duration text-sm">1 tests</p>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="info">
+							<h4>org.openqa.selenium.TimeoutException</h4>
+						</div>
+						<table class='table table-sm mt-4'>
+							<thead>
+								<tr>
+									<th class="status-col">Status</th>
+									<th class="timestamp-col">Timestamp</th>
+									<th>TestName</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>14:33:43 PM</td>
+									<td class='linked' test-id='41'>
+										verifyEnergyandResourcesCustomerStoriesSearchButtonOnCustomerEvidence
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</li>
+				<li class="test-item">
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">org.openqa.selenium.json.JsonException</p>
+							<p class="duration text-sm">1 tests</p>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="info">
+							<h4>org.openqa.selenium.json.JsonException</h4>
+						</div>
+						<table class='table table-sm mt-4'>
+							<thead>
+								<tr>
+									<th class="status-col">Status</th>
+									<th class="timestamp-col">Timestamp</th>
+									<th>TestName</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>14:44:52 PM</td>
+									<td class='linked' test-id='63'>
+										verifyISCloudsOverviewPageFromResourcesMenu
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</li>
+				<li class="test-item">
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">java.lang.AssertionError</p>
+							<p class="duration text-sm">1 tests</p>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="info">
+							<h4>java.lang.AssertionError</h4>
+						</div>
+						<table class='table table-sm mt-4'>
+							<thead>
+								<tr>
+									<th class="status-col">Status</th>
+									<th class="timestamp-col">Timestamp</th>
+									<th>TestName</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>14:46:01 PM</td>
+									<td class='linked' test-id='72'>
+										verifyISSolutionsPlaybookPageFromResourcesMenu
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="test-content scrollable">
+		<div class="test-content-tools">
+			<ul>
+				<li>
+					<a class="back-to-test" href="javascript:void(0)">
+					<i class="fa fa-arrow-left"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="test-content-detail">
+			<div class="detail-body"></div>
+		</div>
+	</div>
+</div>                    <!-- dashboard -->
+<div class="container-fluid p-4 dashboard-view">
+	<div class="row">
+		<div class="col-md-6">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Tests</h6>
+				</div>
+				<div class="card-body">
+					<div class="">
+						<canvas id='parent-analysis' width='115' height='90'></canvas>
+					</div>
+				</div>
+				<div class="card-footer">
+					<div><small data-tooltip='95.833%'>
+						<b>69</b> tests passed
+						</small>
+					</div>
+					<div>
+						<small data-tooltip='4.167%'><b>3</b> tests failed, 
+						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+						</small>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Log events</h6>
+				</div>
+				<div class="card-body">
+					<div class="">
+						<canvas id='events-analysis' width='115' height='90'></canvas>
+					</div>
+				</div>
+				<div class="card-footer">
+					<div><small data-tooltip='92%'><b>69</b> events passed</small></div>
+					<div>
+						<small data-tooltip='8%'><b>6</b> events failed, 
+						<b data-tooltip='0%'>0</b> others
+						</small>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+					<div class="media justify-content-between">
+						<div class="card-header">
+							<h6 class="card-title">Tests</h6>
+							<h2 class="font-size-28 font-weight-light mt-3">72</h2>
+							<span class="text-semibold text-success font-size-15">
+							<i class="ti-arrow-up font-size-11"></i> 
+							<span>95.83%</span>
+							</span>
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-align-left font-size-70 opacity-01"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+					<div class="media justify-content-between">
+						<div class="card-header">
+							<h6 class="card-title">Start</h6>
+							<h4 class="font-weight-light mt-4">May 10, 2023 02:10:49 PM</h4>
+							<span class="text-semibold text-success font-size-15">
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-clock-o font-size-70 text-success opacity-01"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+					<div class="media justify-content-between">
+						<div class="card-header">
+							<h6 class="card-title">Duration</h6>
+							<h4 class="font-weight-light mt-4">0h 35m 27s+662ms</h4>
+							<span class="text-semibold font-size-15">
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-clock-o font-size-70 opacity-01"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Timeline</h6>
+				</div>
+				<div class="card-body">
+					<div class="">
+						<canvas id="timeline" height="120"></canvas>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Environment</h6>
+				</div>
+				<div class="table-overflow">
+					<table class="table table-sm">
+						<thead>
+							<tr class="bg-gray">
+								<th>Name</th>
+								<th>Value</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Tester</td>
+								<td>Shrinivas</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	var statusGroup = {
+	    parentCount: 72,
+		passParent: 69,
+		failParent: 3,
+		fatalParent: 0,
+		errorParent: 0,
+		warningParent: 0,
+		skipParent: 0,
+		exceptionsParent: 3,
+		childCount: 0,
+		passChild: 0,
+		failChild: 0,
+		fatalChild: 0,
+		errorChild: 0,
+		warningChild: 0,
+		skipChild: 0,
+		infoChild: 0,
+		debugChild: 0,
+		exceptionsChild: 0,
+		grandChildCount: 0,
+		passGrandChild: 0,
+		failGrandChild: 0,
+		fatalGrandChild: 0,
+		errorGrandChild: 0,
+		warningGrandChild: 0,
+		skipGrandChild: 0,
+		infoGrandChild: 0,
+		debugGrandChild: 0,
+		exceptionsGrandChild: 0,
+		eventsCount: 75,
+		passEvents: 69,
+		failEvents: 6,
+		fatalEvents: 0,
+		errorEvents: 0,
+		warningEvents: 0,
+		skipEvents: 0,
+		infoEvents: 0,
+		debugEvents: 0,
+		exceptionsEvents: 0
+	};
+</script>
+<script>
+	var timeline = {
+	        "loginPageTitleTest":3.035,"verifyHomepage":0.016,"verifyCatalogueNavigatorOnHomepage":10.805,"verifyCustomerEvidenceSectionOnHomepage":5.356,"verifyViewCampaignPageOnHomepage":14.807,"verifyCloudTransitionServicesPageOnHomepage":11.147,"VerifyCloudManagementOperationsPageOnHomepage":10.687,"VerifyDataStrategyPageOnHomepage":19.12,"VerifyViewalltopoffersPageOnHomepage":13.212,"VerifyCustomerEvidenceSearchPageFromHomepage":32.281,"VerifyEurekaPageFromHomepage":8.033,"verifyEmergingInnovationEngineeringPageOnCataloguePage":38.172,"verifyAdoptionChangeandServicesManagementPageOnCataloguePage":48.62,"verifyBusinessAppsPageButtonOnCataloguePage":71.724,"verifyCrossSolutionAreaandFunctionalSolutionOnCataloguePage":37.259,"verifyDigitalandApplicationInnovationOnCataloguePage":57.373,"verifyDataandAIOnCataloguePage":64.3,"verifyInfrastructureOnCataloguePage":54.681,"verifyModernWorkOnCataloguePage":65.55,"verifySecurityOnCataloguePage":144.687,"verifyAutomotiveMobilityandTransportationOnCataloguePage":52.786,"verifyCrossIndustryOnCataloguePage":16.34,"verifyDefenseandIntelligenceOnCataloguePage":16.68,"verifyEducationOnCataloguePage":16.755,"verifyEnergyandResourcesOnCataloguePage":21.428,"verifyFinancialServicesOnCataloguePage":20.33,"verifyGovernmentOnCataloguePage":16.063,"verifyHealthcareOnCataloguePage":18.841,"verifyIndustrialsandManufacturingOnCataloguePage":94.58,"verifyRetailandConsumerGoodsOnCataloguePage":16.748,"verifySustainabilityOnCataloguePage":20.323,"verifyTelecommunicationsandMediaOnCataloguePage":13.342,"verifyCustomerEvidanceHomePageOnCustomerEvidence":17.571,"verifyCarouselOnCustomerEvidence":0.057,"verifysubmitNewStoryPageOnCustomerEvidence":13.518,"verifyCustomerEvidanceSearchFunctionOnCustomerEvidence":12.777,"verifyAutomotiveMobilityandTransportationCustomerStoriesSearchButtonOnCustomerEvidence":19.789,"verifyCrossIndustryCustomerStoriesSearchButtonOnCustomerEvidence":7.957,"verifyDefenseandIntelligenceCustomerStoriesSearchButtonOnCustomerEvidence":43.817,"verifyEducationCustomerStoriesSearchButtonOnCustomerEvidence":29.919,"verifyEnergyandResourcesCustomerStoriesSearchButtonOnCustomerEvidence":63.577,"verifyFinancialServicesCustomerStoriesSearchButtonOnCustomerEvidence":26.236,"verifyGovernmentCustomerStoriesSearchButtonOnCustomerEvidence":37.896,"verifyHealthcareCustomerStoriesSearchButtonOnCustomerEvidence":15.125,"verifyIndustrialandManufacturingCustomerStoriesSearchButtonOnCustomerEvidence":25.54,"verifyRetailandConsumerGoodsCustomerStoriesSearchButtonOnCustomerEvidence":25.428,"verifySustainabilityCustomerStoriesSearchButtonOnCustomerEvidence":22.439,"verifyTelecommunicationsandMediaCustomerStoriesSearchButtonOnCustomerEvidence":20.996,"verifyBusinessAppsCustomerStoriesSearchButtonOnCustomerEvidence":40.094,"verifyDataAICustomerStoriesSearchButtonOnCustomerEvidence":27.492,"verifyDigitalandApplicationInnovationCustomerStoriesSearchButtonOnCustomerEvidence":27.899,"verifyInfrastructureCustomerStoriesSearchButtonOnCustomerEvidence":18.517,"verifyModernWorkCustomerStoriesSearchButtonOnCustomerEvidence":25.113,"verifySecurityCustomerStoriesSearchButtonOnCustomerEvidence":43.987,"verifyWinWiresCustomerStoriesSearchButtonOnCustomerEvidence":27.317,"verifyDeliveryStoriesCustomerStoriesSearchButtonOnCustomerEvidence":22.43,"verifyclickOncustomerEvidenceWinWiresMenuButtonOnCustomerEvidence":27.753,"verifyCustomerEvidenceDeliveryStoriesMenuButtonOnCustomerEvidence":25.04,"verifySubmitaStoryMenuButtonOncustomerEvidence":16.262,"verifyclickOnAboutCustomerEvidenceMenuButtonOncustomerEvidence":12.362,"verifyTopACRandDVGeneratorsPageFromCampaignsMenu":15.788,"verifyDoMoreWithLessPageFromCampaignsMenu":5.326,"verifyISCloudsOverviewPageFromResourcesMenu":8.095,"verifyCustomerHubPageFromResourcesMenu":17.389,"verifyDatabookPageFromResourcesMenu":7.621,"verifyFundingPageFromResourcesMenu":3.274,"verifyAboutISCataloguePageFromResourcesMenu":3.297,"verifyEmergingSolutionsPageFromResourcesMenu":9.268,"verifyManageCatalogueSubscriptionsPageFromResourcesMenu":7.553,"verifyCatalogueRoadmapPageFromResourcesMenu":8.153,"verifySolutionTruthPageFromResourcesMenu":3.45,"verifyISSolutionsPlaybookPageFromResourcesMenu":14.862
+	};
+</script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/spark/js/spark-script.js"></script>
+<script type="text/javascript">
+
+
+</script></body>
+</html>

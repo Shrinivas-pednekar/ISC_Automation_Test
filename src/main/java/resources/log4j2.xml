@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+	<Properties>
+		<Property name="basePath">./logs</Property>
+	</Properties>
+
+	<Appenders>
+		<RollingFile 
+			name="roll-by-size"
+			fileName="${basePath}/ISCatalogueloggerFile.log"
+			filePattern="${basePath}/QubitloggerFile-%d{MM-dd-yyyy HH:mm:ss}.log.gz"
+			ignoreExceptions="false">
+			<PatternLayout
+				pattern="%d{MM-dd-yyyy HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+			<Policies>
+				<OnStartupTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="500 KB" />
+			</Policies>
+		</RollingFile>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%d{MM-dd-yyyy HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+	</Appenders>
+	<Loggers>
+		<Root level="trace">
+			<AppenderRef ref="File" />
+		</Root>
+	</Loggers>
+</Configuration>

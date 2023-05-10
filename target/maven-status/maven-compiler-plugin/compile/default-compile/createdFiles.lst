@@ -1,0 +1,10 @@
+pageObjects\CataloguePage.class
+pageObjects\HomePage.class
+pageObjects\ResourcesPage.class
+resources\ExtentReporterNG.class
+pageObjects\CampaignsPage.class
+pageObjects\LoginPage.class
+pageObjects\CustomerEvidencePage.class
+resources\TestBase.class
+resources\Utilities$1.class
+resources\Utilities.class
