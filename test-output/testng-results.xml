@@ -1,25 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="11" passed="8" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-10T11:39:04Z" name="Default suite" finished-at="2023-05-10T11:39:48Z" duration-ms="44612">
+  <suite started-at="2023-05-17T18:36:33 IST" name="Default suite" finished-at="2023-05-17T18:38:55 IST" duration-ms="141275">
     <groups>
     </groups>
-    <test started-at="2023-05-10T11:39:04Z" name="Default test" finished-at="2023-05-10T11:39:48Z" duration-ms="44612">
-      <class name="portfolio_test.user.TC01_UserLoginTest">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:portfolio_test.user.TC01_UserLoginTest@5d018107]" started-at="2023-05-10T17:09:04Z" name="initialize" finished-at="2023-05-10T17:09:45Z" duration-ms="41188" status="PASS">
+    <test started-at="2023-05-17T18:36:33 IST" name="Default test" finished-at="2023-05-17T18:38:55 IST" duration-ms="141275">
+      <class name="portfolio_test.user.TC02_HomePage">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:portfolio_test.user.TC02_HomePage@2df6226d]" started-at="2023-05-17T18:36:33 IST" name="initialize" finished-at="2023-05-17T18:37:20 IST" duration-ms="46962" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="loginPageTitleTest()[pri:0, instance:portfolio_test.user.TC01_UserLoginTest@5d018107]" started-at="2023-05-10T17:09:45Z" name="loginPageTitleTest" finished-at="2023-05-10T17:09:48Z" duration-ms="3034" status="PASS">
+        <test-method signature="verifyHomepage()[pri:1, instance:portfolio_test.user.TC02_HomePage@2df6226d]" started-at="2023-05-17T18:37:20 IST" name="verifyHomepage" finished-at="2023-05-17T18:37:20 IST" duration-ms="51" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginPageTitleTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:portfolio_test.user.TC01_UserLoginTest@5d018107]" started-at="2023-05-10T17:09:48Z" name="teardown" finished-at="2023-05-10T17:09:48Z" duration-ms="363" status="PASS">
+        </test-method> <!-- verifyHomepage -->
+        <test-method signature="verifyCatalogueNavigatorOnHomepage()[pri:2, instance:portfolio_test.user.TC02_HomePage@2df6226d]" started-at="2023-05-17T18:37:20 IST" name="verifyCatalogueNavigatorOnHomepage" finished-at="2023-05-17T18:37:31 IST" duration-ms="10593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCatalogueNavigatorOnHomepage -->
+        <test-method signature="verifyCustomerEvidenceSectionOnHomepage()[pri:3, instance:portfolio_test.user.TC02_HomePage@2df6226d]" started-at="2023-05-17T18:37:31 IST" name="verifyCustomerEvidenceSectionOnHomepage" finished-at="2023-05-17T18:37:36 IST" duration-ms="5419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCustomerEvidenceSectionOnHomepage -->
+        <test-method signature="verifyViewCampaignPageOnHomepage()[pri:4, instance:portfolio_test.user.TC02_HomePage@2df6226d]" started-at="2023-05-17T18:37:36 IST" name="verifyViewCampaignPageOnHomepage" finished-at="2023-05-17T18:37:51 IST" duration-ms="14488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyViewCampaignPageOnHomepage -->
+        <test-method signature="verifyCloudTransitionServicesPageOnHomepage()[pri:5, instance:portfolio_test.user.TC02_HomePage@2df6226d]" started-at="2023-05-17T18:37:51 IST" name="verifyCloudTransitionServicesPageOnHomepage" finished-at="2023-05-17T18:38:03 IST" duration-ms="11705" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCloudTransitionServicesPageOnHomepage -->
+        <test-method signature="VerifyCloudManagementOperationsPageOnHomepage()[pri:6, instance:portfolio_test.user.TC02_HomePage@2df6226d]" started-at="2023-05-17T18:38:03 IST" name="VerifyCloudManagementOperationsPageOnHomepage" finished-at="2023-05-17T18:38:14 IST" duration-ms="11119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyCloudManagementOperationsPageOnHomepage -->
+        <test-method signature="VerifyDataStrategyPageOnHomepage()[pri:7, instance:portfolio_test.user.TC02_HomePage@2df6226d]" started-at="2023-05-17T18:38:14 IST" name="VerifyDataStrategyPageOnHomepage" finished-at="2023-05-17T18:38:31 IST" duration-ms="17635" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyDataStrategyPageOnHomepage -->
+        <test-method signature="VerifyViewalltopoffersPageOnHomepage()[pri:8, instance:portfolio_test.user.TC02_HomePage@2df6226d]" started-at="2023-05-17T18:38:31 IST" name="VerifyViewalltopoffersPageOnHomepage" finished-at="2023-05-17T18:38:43 IST" duration-ms="11767" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyViewalltopoffersPageOnHomepage -->
+        <test-method signature="VerifyCustomerEvidenceSearchPageFromHomepage()[pri:9, instance:portfolio_test.user.TC02_HomePage@2df6226d]" started-at="2023-05-17T18:38:43 IST" name="VerifyCustomerEvidenceSearchPageFromHomepage" finished-at="2023-05-17T18:38:49 IST" duration-ms="5342" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "java.time.temporal.TemporalAmount.addTo(java.time.temporal.Temporal)" because "amountToAdd" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.time.temporal.TemporalAmount.addTo(java.time.temporal.Temporal)" because "amountToAdd" is null
+at java.base/java.time.Instant.plus(Instant.java:790)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+at resources.Utilities.waitForElementToBeVisible(Utilities.java:147)
+at pageObjects.HomePage.CustomerEvidenceSearchResultwaitForElementToBeVisible(HomePage.java:141)
+at portfolio_test.user.TC02_HomePage.VerifyCustomerEvidenceSearchPageFromHomepage(TC02_HomePage.java:165)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyCustomerEvidenceSearchPageFromHomepage -->
+        <test-method signature="VerifyEurekaPageFromHomepage()[pri:10, instance:portfolio_test.user.TC02_HomePage@2df6226d]" started-at="2023-05-17T18:38:49 IST" name="VerifyEurekaPageFromHomepage" finished-at="2023-05-17T18:38:54 IST" duration-ms="5523" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at portfolio_test.user.TC02_HomePage.VerifyEurekaPageFromHomepage(TC02_HomePage.java:184)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyEurekaPageFromHomepage -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:portfolio_test.user.TC02_HomePage@2df6226d]" started-at="2023-05-17T18:38:54 IST" name="teardown" finished-at="2023-05-17T18:38:55 IST" duration-ms="514" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- portfolio_test.user.TC01_UserLoginTest -->
+      </class> <!-- portfolio_test.user.TC02_HomePage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
