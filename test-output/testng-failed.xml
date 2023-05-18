@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="portfolio_test.user.TC02_HomePage">
+      <class name="portfolio_test.user.TC01_UserLoginTest">
         <methods>
-          <include name="VerifyCustomerEvidenceSearchPageFromHomepage"/>
           <include name="initialize"/>
           <include name="teardown"/>
-          <include name="VerifyEurekaPageFromHomepage"/>
+          <include name="loginPageTitleTest"/>
         </methods>
-      </class> <!-- portfolio_test.user.TC02_HomePage -->
+      </class> <!-- portfolio_test.user.TC01_UserLoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,73 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="11" passed="8" failed="2" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-18T16:37:42 IST" name="Default suite" finished-at="2023-05-18T16:39:44 IST" duration-ms="121595">
+  <suite started-at="2023-05-18T17:04:30 IST" name="Default suite" finished-at="2023-05-18T17:04:34 IST" duration-ms="3444">
     <groups>
     </groups>
-    <test started-at="2023-05-18T16:37:42 IST" name="Default test" finished-at="2023-05-18T16:39:44 IST" duration-ms="121595">
-      <class name="portfolio_test.user.TC02_HomePage">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:portfolio_test.user.TC02_HomePage@2a76840c]" started-at="2023-05-18T16:37:42 IST" name="initialize" finished-at="2023-05-18T16:38:21 IST" duration-ms="38799" status="PASS">
+    <test started-at="2023-05-18T17:04:30 IST" name="Default test" finished-at="2023-05-18T17:04:34 IST" duration-ms="3444">
+      <class name="portfolio_test.user.TC01_UserLoginTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:portfolio_test.user.TC01_UserLoginTest@93cf163]" started-at="2023-05-18T17:04:30 IST" name="initialize" finished-at="2023-05-18T17:04:34 IST" duration-ms="3388" status="FAIL">
+          <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
+            <message>
+              <![CDATA[Unable to establish websocket connection to http://localhost:62748/devtools/browser/c45548cc-3a32-46d3-8638-23480889d490
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: driver.version: EdgeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:62748/devtools/browser/c45548cc-3a32-46d3-8638-23480889d490
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: driver.version: EdgeDriver
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+at org.openqa.selenium.devtools.Connection.<init>(Connection.java:82)
+at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+at java.base/java.util.Optional.map(Optional.java:260)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:60)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:56)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:48)
+at resources.TestBase.initializeDriver(TestBase.java:47)
+at portfolio_test.user.TC01_UserLoginTest.initialize(TC01_UserLoginTest.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:644)
+at org.testng.TestRunner.beforeRun(TestRunner.java:633)
+at org.testng.TestRunner.run(TestRunner.java:595)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="verifyHomepage()[pri:1, instance:portfolio_test.user.TC02_HomePage@2a76840c]" started-at="2023-05-18T16:38:21 IST" name="verifyHomepage" finished-at="2023-05-18T16:38:21 IST" duration-ms="16" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyHomepage -->
-        <test-method signature="verifyCatalogueNavigatorOnHomepage()[pri:2, instance:portfolio_test.user.TC02_HomePage@2a76840c]" started-at="2023-05-18T16:38:21 IST" name="verifyCatalogueNavigatorOnHomepage" finished-at="2023-05-18T16:38:31 IST" duration-ms="10412" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCatalogueNavigatorOnHomepage -->
-        <test-method signature="verifyCustomerEvidenceSectionOnHomepage()[pri:3, instance:portfolio_test.user.TC02_HomePage@2a76840c]" started-at="2023-05-18T16:38:31 IST" name="verifyCustomerEvidenceSectionOnHomepage" finished-at="2023-05-18T16:38:37 IST" duration-ms="5274" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCustomerEvidenceSectionOnHomepage -->
-        <test-method signature="verifyViewCampaignPageOnHomepage()[pri:4, instance:portfolio_test.user.TC02_HomePage@2a76840c]" started-at="2023-05-18T16:38:37 IST" name="verifyViewCampaignPageOnHomepage" finished-at="2023-05-18T16:38:49 IST" duration-ms="12379" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyViewCampaignPageOnHomepage -->
-        <test-method signature="verifyCloudTransitionServicesPageOnHomepage()[pri:5, instance:portfolio_test.user.TC02_HomePage@2a76840c]" started-at="2023-05-18T16:38:49 IST" name="verifyCloudTransitionServicesPageOnHomepage" finished-at="2023-05-18T16:38:59 IST" duration-ms="10324" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCloudTransitionServicesPageOnHomepage -->
-        <test-method signature="VerifyCloudManagementOperationsPageOnHomepage()[pri:6, instance:portfolio_test.user.TC02_HomePage@2a76840c]" started-at="2023-05-18T16:38:59 IST" name="VerifyCloudManagementOperationsPageOnHomepage" finished-at="2023-05-18T16:39:10 IST" duration-ms="10377" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyCloudManagementOperationsPageOnHomepage -->
-        <test-method signature="VerifyDataStrategyPageOnHomepage()[pri:7, instance:portfolio_test.user.TC02_HomePage@2a76840c]" started-at="2023-05-18T16:39:10 IST" name="VerifyDataStrategyPageOnHomepage" finished-at="2023-05-18T16:39:22 IST" duration-ms="12498" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyDataStrategyPageOnHomepage -->
-        <test-method signature="VerifyViewalltopoffersPageOnHomepage()[pri:8, instance:portfolio_test.user.TC02_HomePage@2a76840c]" started-at="2023-05-18T16:39:22 IST" name="VerifyViewalltopoffersPageOnHomepage" finished-at="2023-05-18T16:39:33 IST" duration-ms="10345" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyViewalltopoffersPageOnHomepage -->
-        <test-method signature="VerifyCustomerEvidenceSearchPageFromHomepage()[pri:9, instance:portfolio_test.user.TC02_HomePage@2a76840c]" started-at="2023-05-18T16:39:33 IST" name="VerifyCustomerEvidenceSearchPageFromHomepage" finished-at="2023-05-18T16:39:38 IST" duration-ms="5352" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="loginPageTitleTest()[pri:1, instance:portfolio_test.user.TC01_UserLoginTest@93cf163]" started-at="2023-05-18T17:04:34 IST" name="loginPageTitleTest" finished-at="2023-05-18T17:04:34 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
             <message>
-              <![CDATA[Cannot invoke "java.time.temporal.TemporalAmount.addTo(java.time.temporal.Temporal)" because "amountToAdd" is null]]>
+              <![CDATA[Unable to establish websocket connection to http://localhost:62748/devtools/browser/c45548cc-3a32-46d3-8638-23480889d490
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: driver.version: EdgeDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.time.temporal.TemporalAmount.addTo(java.time.temporal.Temporal)" because "amountToAdd" is null
-at java.base/java.time.Instant.plus(Instant.java:790)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-at resources.Utilities.waitForElementToBeVisible(Utilities.java:147)
-at pageObjects.HomePage.CustomerEvidenceSearchResultwaitForElementToBeVisible(HomePage.java:141)
-at portfolio_test.user.TC02_HomePage.VerifyCustomerEvidenceSearchPageFromHomepage(TC02_HomePage.java:165)
+              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:62748/devtools/browser/c45548cc-3a32-46d3-8638-23480889d490
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: driver.version: EdgeDriver
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+at org.openqa.selenium.devtools.Connection.<init>(Connection.java:82)
+at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+at java.base/java.util.Optional.map(Optional.java:260)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:60)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:56)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:48)
+at resources.TestBase.initializeDriver(TestBase.java:47)
+at portfolio_test.user.TC01_UserLoginTest.initialize(TC01_UserLoginTest.java:28)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:644)
+at org.testng.TestRunner.beforeRun(TestRunner.java:633)
+at org.testng.TestRunner.run(TestRunner.java:595)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
 at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
 at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
@@ -83,59 +109,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyCustomerEvidenceSearchPageFromHomepage -->
-        <test-method signature="VerifyEurekaPageFromHomepage()[pri:10, instance:portfolio_test.user.TC02_HomePage@2a76840c]" started-at="2023-05-18T16:39:38 IST" name="VerifyEurekaPageFromHomepage" finished-at="2023-05-18T16:39:43 IST" duration-ms="5312" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertTrue(Assert.java:56)
-at org.testng.Assert.assertTrue(Assert.java:66)
-at portfolio_test.user.TC02_HomePage.VerifyEurekaPageFromHomepage(TC02_HomePage.java:184)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyEurekaPageFromHomepage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:portfolio_test.user.TC02_HomePage@2a76840c]" started-at="2023-05-18T16:39:43 IST" name="teardown" finished-at="2023-05-18T16:39:44 IST" duration-ms="461" status="PASS">
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:portfolio_test.user.TC01_UserLoginTest@93cf163]" started-at="2023-05-18T17:04:34 IST" name="teardown" finished-at="2023-05-18T17:04:34 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- portfolio_test.user.TC02_HomePage -->
+      </class> <!-- portfolio_test.user.TC01_UserLoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
