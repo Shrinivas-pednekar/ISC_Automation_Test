@@ -42,7 +42,7 @@ public class TestBase {
 			WebDriverManager.edgedriver().setup();
 			  EdgeOptions options = new EdgeOptions();
 			  //options.setBinary("C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe");
-			  options.addArguments("--remote-allow-origins=http://servicesportfolio.net//Home//Index,https://servicesportfolio.net//Home//Index");
+			  options.addArguments("--remote-allow-origins=*");
 		        //options.addArguments("--headless=new");
 		        driver = new EdgeDriver(options);
 			   // driver = new EdgeDriver();
