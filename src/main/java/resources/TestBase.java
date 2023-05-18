@@ -40,11 +40,10 @@ public class TestBase {
 		else if (browserName.equalsIgnoreCase("edge"))
 		{
 			WebDriverManager.edgedriver().setup();
-		//	EdgeOptions options = new EdgeOptions();
-			 
-			    //options.addArguments("--remote-debugging-port=9222");
-			    
-			    driver = new EdgeDriver();
+			  EdgeOptions options = new EdgeOptions();
+		        options.addArguments("--headless=new");
+		        driver = new EdgeDriver(options);
+			   // driver = new EdgeDriver();
 			 
 			
 		}

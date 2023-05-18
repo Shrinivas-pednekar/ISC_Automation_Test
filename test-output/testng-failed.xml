@@ -5,8 +5,12 @@
     <classes>
       <class name="portfolio_test.user.TC02_HomePage">
         <methods>
+          <include name="VerifyCloudManagementOperationsPageOnHomepage"/>
           <include name="VerifyCustomerEvidenceSearchPageFromHomepage"/>
+          <include name="VerifyViewalltopoffersPageOnHomepage"/>
           <include name="initialize"/>
+          <include name="verifyCloudTransitionServicesPageOnHomepage"/>
+          <include name="VerifyDataStrategyPageOnHomepage"/>
           <include name="teardown"/>
           <include name="VerifyEurekaPageFromHomepage"/>
         </methods>
