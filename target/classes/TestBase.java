@@ -41,7 +41,9 @@ public class TestBase {
 		{
 			WebDriverManager.edgedriver().setup();
 			  EdgeOptions options = new EdgeOptions();
-		        options.addArguments("--headless=new");
+			  options.setBinary("C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe");
+
+		        //options.addArguments("--headless=new");
 		        driver = new EdgeDriver(options);
 			   // driver = new EdgeDriver();
 			 
