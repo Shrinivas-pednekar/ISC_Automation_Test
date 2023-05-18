@@ -1,379 +1,41 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
 <head>
-<title>TestNG:  Unit Test</title>
-<style type="text/css">
-table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
-table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
-border:1px solid #000099;padding:.25em .5em .25em .5em
-}
-table.result th {vertical-align:bottom}
-tr.param th {padding-left:1em;padding-right:1em}
-tr.param td {padding-left:.5em;padding-right:2em}
-td.numi,th.numi,td.numi_attn {
-text-align:right
-}
-tr.total td {font-weight:bold}
-table caption {
-text-align:center;font-weight:bold;
-}
-table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
-table.passed td,table tr.passedeven td {background-color: #33FF33;}
-table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
-table.passed td,table tr.skippedodd td {background-color: #dddddd;}
-table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
-table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
-tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
-p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
-div.shootout {padding:2em;border:3px #4854A8 solid}
-</style>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
 </head>
 <body>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Validating IS Catalauge Login page test</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">52.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr class="stripe"><td style="text-align:left;padding-right:2em">Validating all links and pages present under Home page test</td><td class="numi">10</td><td class="numi">10</td><td class="numi">0</td><td class="numi">0</td><td class="numi">173.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr><td style="text-align:left;padding-right:2em">Validating all links and pages present under Catalogue menu test</td><td class="numi">21</td><td class="numi">21</td><td class="numi">0</td><td class="numi">0</td><td class="numi">954.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr class="stripe"><td style="text-align:left;padding-right:2em">Validating all links and pages present under Customer Evidence menu test</td><td class="numi">27</td><td class="numi">27</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">745.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr><td style="text-align:left;padding-right:2em">Validating all links and pages present under Campaigns menu test</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi">0</td><td class="numi">69.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr class="stripe"><td style="text-align:left;padding-right:2em">Validating all links and pages present under Resources menu test</td><td class="numi">8</td><td class="numi">8</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">130.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr class="total"><td>Total</td>
-<td class="numi">69</td><td class="numi">69</td><td class="numi">0</td><td class="numi_attn">3</td><td class="numi">2,126.8 seconds</td><td colspan="2">&nbsp;</td></tr>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">IS Catalauge Automation Tests</th></tr>
+<tr><td><a href="#t0">Validating IS Catalauge Login page test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">37,346</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Validating all links and pages present under Home page test</a></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">124,074</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">9</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">161,420</th><th colspan="2"></th></tr>
 </table>
-<table cellspacing="0" cellpadding="0" class="passed" id="summary">
-<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Validating IS Catalauge Login page test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">portfolio_test.user.TC01_UserLoginTest</td><td><a href="#m1"><b>loginPageTitleTest</b>  </a></td><td class="numi">1</td><td>1683708099022</td><td class="numi">3020</td></tr>
-<tr><th colspan="4">Validating all links and pages present under Home page test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="10">portfolio_test.user.TC02_HomePage</td><td><a href="#m2"><b>verifyHomepage</b>  </a></td><td class="numi">1</td><td>1683708150566</td><td class="numi">16</td></tr><tr class="passedodd"><td><a href="#m3"><b>verifyCatalogueNavigatorOnHomepage</b>  </a></td><td class="numi">1</td><td>1683708150582</td><td class="numi">10805</td></tr><tr class="passedodd"><td><a href="#m4"><b>verifyCustomerEvidenceSectionOnHomepage</b>  </a></td><td class="numi">1</td><td>1683708161387</td><td class="numi">5356</td></tr><tr class="passedodd"><td><a href="#m5"><b>verifyViewCampaignPageOnHomepage</b>  </a></td><td class="numi">1</td><td>1683708166743</td><td class="numi">14807</td></tr><tr class="passedodd"><td><a href="#m6"><b>verifyCloudTransitionServicesPageOnHomepage</b>  </a></td><td class="numi">1</td><td>1683708181550</td><td class="numi">11147</td></tr><tr class="passedodd"><td><a href="#m7"><b>VerifyCloudManagementOperationsPageOnHomepage</b>  </a></td><td class="numi">1</td><td>1683708192697</td><td class="numi">10687</td></tr><tr class="passedodd"><td><a href="#m8"><b>VerifyDataStrategyPageOnHomepage</b>  </a></td><td class="numi">1</td><td>1683708203384</td><td class="numi">19120</td></tr><tr class="passedodd"><td><a href="#m9"><b>VerifyViewalltopoffersPageOnHomepage</b>  </a></td><td class="numi">1</td><td>1683708222504</td><td class="numi">13212</td></tr><tr class="passedodd"><td><a href="#m10"><b>VerifyCustomerEvidenceSearchPageFromHomepage</b>  </a></td><td class="numi">1</td><td>1683708235716</td><td class="numi">32281</td></tr><tr class="passedodd"><td><a href="#m11"><b>VerifyEurekaPageFromHomepage</b>  </a></td><td class="numi">1</td><td>1683708267997</td><td class="numi">8033</td></tr>
-<tr><th colspan="4">Validating all links and pages present under Catalogue menu test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="21">portfolio_test.user.TC03_CatalogueTest</td><td><a href="#m12"><b>verifyEmergingInnovationEngineeringPageOnCataloguePage</b>  </a></td><td class="numi">1</td><td>1683708324051</td><td class="numi">38172</td></tr><tr class="passedodd"><td><a href="#m13"><b>verifyAdoptionChangeandServicesManagementPageOnCataloguePage</b>  </a></td><td class="numi">1</td><td>1683708362223</td><td class="numi">48620</td></tr><tr class="passedodd"><td><a href="#m14"><b>verifyBusinessAppsPageButtonOnCataloguePage</b>  </a></td><td class="numi">1</td><td>1683708410843</td><td class="numi">71725</td></tr><tr class="passedodd"><td><a href="#m15"><b>verifyCrossSolutionAreaandFunctionalSolutionOnCataloguePage</b>  </a></td><td class="numi">1</td><td>1683708482568</td><td class="numi">37259</td></tr><tr class="passedodd"><td><a href="#m16"><b>verifyDigitalandApplicationInnovationOnCataloguePage</b>  </a></td><td class="numi">1</td><td>1683708519827</td><td class="numi">57373</td></tr><tr class="passedodd"><td><a href="#m17"><b>verifyDataandAIOnCataloguePage</b>  </a></td><td class="numi">1</td><td>1683708577200</td><td class="numi">64300</td></tr><tr class="passedodd"><td><a href="#m18"><b>verifyInfrastructureOnCataloguePage</b>  </a></td><td class="numi">1</td><td>1683708641500</td><td class="numi">54681</td></tr><tr class="passedodd"><td><a href="#m19"><b>verifyModernWorkOnCataloguePage</b>  </a></td><td class="numi">1</td><td>1683708696181</td><td class="numi">65550</td></tr><tr class="passedodd"><td><a href="#m20"><b>verifySecurityOnCataloguePage</b>  </a></td><td class="numi">1</td><td>1683708761731</td><td class="numi">144687</td></tr><tr class="passedodd"><td><a href="#m21"><b>verifyAutomotiveMobilityandTransportationOnCataloguePage</b>  </a></td><td class="numi">1</td><td>1683708906418</td><td class="numi">52786</td></tr><tr class="passedodd"><td><a href="#m22"><b>verifyCrossIndustryOnCataloguePage</b>  </a></td><td class="numi">1</td><td>1683708959204</td><td class="numi">16340</td></tr><tr class="passedodd"><td><a href="#m23"><b>verifyDefenseandIntelligenceOnCataloguePage</b>  </a></td><td class="numi">1</td><td>1683708975544</td><td class="numi">16680</td></tr><tr class="passedodd"><td><a href="#m24"><b>verifyEducationOnCataloguePage</b>  </a></td><td class="numi">1</td><td>1683708992224</td><td class="numi">16756</td></tr><tr class="passedodd"><td><a href="#m25"><b>verifyEnergyandResourcesOnCataloguePage</b>  </a></td><td class="numi">1</td><td>1683709008980</td><td class="numi">21430</td></tr><tr class="passedodd"><td><a href="#m26"><b>verifyFinancialServicesOnCataloguePage</b>  </a></td><td class="numi">1</td><td>1683709030410</td><td class="numi">20330</td></tr><tr class="passedodd"><td><a href="#m27"><b>verifyGovernmentOnCataloguePage</b>  </a></td><td class="numi">1</td><td>1683709050740</td><td class="numi">16063</td></tr><tr class="passedodd"><td><a href="#m28"><b>verifyHealthcareOnCataloguePage</b>  </a></td><td class="numi">1</td><td>1683709066803</td><td class="numi">18841</td></tr><tr class="passedodd"><td><a href="#m29"><b>verifyIndustrialsandManufacturingOnCataloguePage</b>  </a></td><td class="numi">1</td><td>1683709085644</td><td class="numi">94580</td></tr><tr class="passedodd"><td><a href="#m30"><b>verifyRetailandConsumerGoodsOnCataloguePage</b>  </a></td><td class="numi">1</td><td>1683709180224</td><td class="numi">16748</td></tr><tr class="passedodd"><td><a href="#m31"><b>verifySustainabilityOnCataloguePage</b>  </a></td><td class="numi">1</td><td>1683709196972</td><td class="numi">20323</td></tr><tr class="passedodd"><td><a href="#m32"><b>verifyTelecommunicationsandMediaOnCataloguePage</b>  </a></td><td class="numi">1</td><td>1683709217295</td><td class="numi">13342</td></tr>
-<tr><th colspan="4">Validating all links and pages present under Customer Evidence menu test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">portfolio_test.user.TC04_CustomerEvidenceTest</td><td><a href="#m33"><b>verifyEnergyandResourcesCustomerStoriesSearchButtonOnCustomerEvidence</b>  </a></td><td class="numi">1</td><td>1683709423962</td><td class="numi">63560</td></tr>
-<tr><th colspan="4">Validating all links and pages present under Customer Evidence menu test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="27">portfolio_test.user.TC04_CustomerEvidenceTest</td><td><a href="#m34"><b>verifyCustomerEvidanceHomePageOnCustomerEvidence</b>  </a></td><td class="numi">1</td><td>1683709278550</td><td class="numi">17571</td></tr><tr class="passedodd"><td><a href="#m35"><b>verifyCarouselOnCustomerEvidence</b>  </a></td><td class="numi">1</td><td>1683709296121</td><td class="numi">57</td></tr><tr class="passedodd"><td><a href="#m36"><b>verifysubmitNewStoryPageOnCustomerEvidence</b>  </a></td><td class="numi">1</td><td>1683709296178</td><td class="numi">13518</td></tr><tr class="passedodd"><td><a href="#m37"><b>verifyCustomerEvidanceSearchFunctionOnCustomerEvidence</b>  </a></td><td class="numi">1</td><td>1683709309697</td><td class="numi">12777</td></tr><tr class="passedodd"><td><a href="#m38"><b>verifyAutomotiveMobilityandTransportationCustomerStoriesSearchButtonOnCustomerEvidence</b>  </a></td><td class="numi">1</td><td>1683709322474</td><td class="numi">19789</td></tr><tr class="passedodd"><td><a href="#m39"><b>verifyCrossIndustryCustomerStoriesSearchButtonOnCustomerEvidence</b>  </a></td><td class="numi">1</td><td>1683709342263</td><td class="numi">7957</td></tr><tr class="passedodd"><td><a href="#m40"><b>verifyDefenseandIntelligenceCustomerStoriesSearchButtonOnCustomerEvidence</b>  </a></td><td class="numi">1</td><td>1683709350220</td><td class="numi">43817</td></tr><tr class="passedodd"><td><a href="#m41"><b>verifyEducationCustomerStoriesSearchButtonOnCustomerEvidence</b>  </a></td><td class="numi">1</td><td>1683709394043</td><td class="numi">29919</td></tr><tr class="passedodd"><td><a href="#m42"><b>verifyFinancialServicesCustomerStoriesSearchButtonOnCustomerEvidence</b>  </a></td><td class="numi">1</td><td>1683709488038</td><td class="numi">26228</td></tr><tr class="passedodd"><td><a href="#m43"><b>verifyGovernmentCustomerStoriesSearchButtonOnCustomerEvidence</b>  </a></td><td class="numi">1</td><td>1683709514275</td><td class="numi">37896</td></tr><tr class="passedodd"><td><a href="#m44"><b>verifyHealthcareCustomerStoriesSearchButtonOnCustomerEvidence</b>  </a></td><td class="numi">1</td><td>1683709552171</td><td class="numi">15125</td></tr><tr class="passedodd"><td><a href="#m45"><b>verifyIndustrialandManufacturingCustomerStoriesSearchButtonOnCustomerEvidence</b>  </a></td><td class="numi">1</td><td>1683709567296</td><td class="numi">25540</td></tr><tr class="passedodd"><td><a href="#m46"><b>verifyRetailandConsumerGoodsCustomerStoriesSearchButtonOnCustomerEvidence</b>  </a></td><td class="numi">1</td><td>1683709592844</td><td class="numi">25428</td></tr><tr class="passedodd"><td><a href="#m47"><b>verifySustainabilityCustomerStoriesSearchButtonOnCustomerEvidence</b>  </a></td><td class="numi">1</td><td>1683709618272</td><td class="numi">22439</td></tr><tr class="passedodd"><td><a href="#m48"><b>verifyTelecommunicationsandMediaCustomerStoriesSearchButtonOnCustomerEvidence</b>  </a></td><td class="numi">1</td><td>1683709640711</td><td class="numi">20996</td></tr><tr class="passedodd"><td><a href="#m49"><b>verifyBusinessAppsCustomerStoriesSearchButtonOnCustomerEvidence</b>  </a></td><td class="numi">1</td><td>1683709661707</td><td class="numi">40093</td></tr><tr class="passedodd"><td><a href="#m50"><b>verifyDataAICustomerStoriesSearchButtonOnCustomerEvidence</b>  </a></td><td class="numi">1</td><td>1683709701801</td><td class="numi">27492</td></tr><tr class="passedodd"><td><a href="#m51"><b>verifyDigitalandApplicationInnovationCustomerStoriesSearchButtonOnCustomerEvidence</b>  </a></td><td class="numi">1</td><td>1683709729293</td><td class="numi">27899</td></tr><tr class="passedodd"><td><a href="#m52"><b>verifyInfrastructureCustomerStoriesSearchButtonOnCustomerEvidence</b>  </a></td><td class="numi">1</td><td>1683709757192</td><td class="numi">18517</td></tr><tr class="passedodd"><td><a href="#m53"><b>verifyModernWorkCustomerStoriesSearchButtonOnCustomerEvidence</b>  </a></td><td class="numi">1</td><td>1683709775709</td><td class="numi">25113</td></tr><tr class="passedodd"><td><a href="#m54"><b>verifySecurityCustomerStoriesSearchButtonOnCustomerEvidence</b>  </a></td><td class="numi">1</td><td>1683709800822</td><td class="numi">43987</td></tr><tr class="passedodd"><td><a href="#m55"><b>verifyWinWiresCustomerStoriesSearchButtonOnCustomerEvidence</b>  </a></td><td class="numi">1</td><td>1683709844809</td><td class="numi">27317</td></tr><tr class="passedodd"><td><a href="#m56"><b>verifyDeliveryStoriesCustomerStoriesSearchButtonOnCustomerEvidence</b>  </a></td><td class="numi">1</td><td>1683709872126</td><td class="numi">22430</td></tr><tr class="passedodd"><td><a href="#m57"><b>verifyclickOncustomerEvidenceWinWiresMenuButtonOnCustomerEvidence</b>  </a></td><td class="numi">1</td><td>1683709894556</td><td class="numi">27753</td></tr><tr class="passedodd"><td><a href="#m58"><b>verifyCustomerEvidenceDeliveryStoriesMenuButtonOnCustomerEvidence</b>  </a></td><td class="numi">1</td><td>1683709922309</td><td class="numi">25040</td></tr><tr class="passedodd"><td><a href="#m59"><b>verifySubmitaStoryMenuButtonOncustomerEvidence</b>  </a></td><td class="numi">1</td><td>1683709947349</td><td class="numi">16262</td></tr><tr class="passedodd"><td><a href="#m60"><b>verifyclickOnAboutCustomerEvidenceMenuButtonOncustomerEvidence</b>  </a></td><td class="numi">1</td><td>1683709963611</td><td class="numi">12362</td></tr>
-<tr><th colspan="4">Validating all links and pages present under Campaigns menu test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="2">portfolio_test.user.TC05_CampaignsPage</td><td><a href="#m61"><b>verifyTopACRandDVGeneratorsPageFromCampaignsMenu</b>  </a></td><td class="numi">1</td><td>1683710024679</td><td class="numi">15788</td></tr><tr class="passedodd"><td><a href="#m62"><b>verifyDoMoreWithLessPageFromCampaignsMenu</b>  </a></td><td class="numi">1</td><td>1683710040467</td><td class="numi">5326</td></tr>
-<tr><th colspan="4">Validating all links and pages present under Resources menu test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="2">portfolio_test.user.TC06_ResourcesPage</td><td><a href="#m63"><b>verifyISCloudsOverviewPageFromResourcesMenu</b>  </a></td><td class="numi">1</td><td>1683710092172</td><td class="numi">8095</td></tr><tr class="failedodd"><td><a href="#m64"><b>verifyISSolutionsPlaybookPageFromResourcesMenu</b>  </a></td><td class="numi">1</td><td>1683710161482</td><td class="numi">14862</td></tr>
-<tr><th colspan="4">Validating all links and pages present under Resources menu test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="8">portfolio_test.user.TC06_ResourcesPage</td><td><a href="#m65"><b>verifyCustomerHubPageFromResourcesMenu</b>  </a></td><td class="numi">1</td><td>1683710101467</td><td class="numi">17399</td></tr><tr class="passedodd"><td><a href="#m66"><b>verifyDatabookPageFromResourcesMenu</b>  </a></td><td class="numi">1</td><td>1683710118866</td><td class="numi">7621</td></tr><tr class="passedodd"><td><a href="#m67"><b>verifyFundingPageFromResourcesMenu</b>  </a></td><td class="numi">1</td><td>1683710126487</td><td class="numi">3274</td></tr><tr class="passedodd"><td><a href="#m68"><b>verifyAboutISCataloguePageFromResourcesMenu</b>  </a></td><td class="numi">1</td><td>1683710129761</td><td class="numi">3297</td></tr><tr class="passedodd"><td><a href="#m69"><b>verifyEmergingSolutionsPageFromResourcesMenu</b>  </a></td><td class="numi">1</td><td>1683710133058</td><td class="numi">9268</td></tr><tr class="passedodd"><td><a href="#m70"><b>verifyManageCatalogueSubscriptionsPageFromResourcesMenu</b>  </a></td><td class="numi">1</td><td>1683710142326</td><td class="numi">7553</td></tr><tr class="passedodd"><td><a href="#m71"><b>verifyCatalogueRoadmapPageFromResourcesMenu</b>  </a></td><td class="numi">1</td><td>1683710149879</td><td class="numi">8153</td></tr><tr class="passedodd"><td><a href="#m72"><b>verifySolutionTruthPageFromResourcesMenu</b>  </a></td><td class="numi">1</td><td>1683710158032</td><td class="numi">3450</td></tr>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">IS Catalauge Automation Tests</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Validating IS Catalauge Login page test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">portfolio_test.user.TC01_UserLoginTest</td><td><a href="#m0">loginPageTitleTest</a></td><td rowspan="1">1684404649051</td><td rowspan="1">3061</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Validating all links and pages present under Home page test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">portfolio_test.user.TC02_HomePage</td><td><a href="#m1">VerifyCustomerEvidenceSearchPageFromHomepage</a></td><td rowspan="1">1684404765343</td><td rowspan="1">5340</td></tr><tr class="failedeven"><td><a href="#m2">VerifyEurekaPageFromHomepage</a></td><td rowspan="1">1684404770875</td><td rowspan="1">5321</td></tr><tr><th colspan="4">Validating all links and pages present under Home page test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="8">portfolio_test.user.TC02_HomePage</td><td><a href="#m3">VerifyCloudManagementOperationsPageOnHomepage</a></td><td rowspan="1">1684404728011</td><td rowspan="1">10380</td></tr><tr class="passedeven"><td><a href="#m4">VerifyDataStrategyPageOnHomepage</a></td><td rowspan="1">1684404738394</td><td rowspan="1">16514</td></tr><tr class="passedeven"><td><a href="#m5">VerifyViewalltopoffersPageOnHomepage</a></td><td rowspan="1">1684404754910</td><td rowspan="1">10431</td></tr><tr class="passedeven"><td><a href="#m6">verifyCatalogueNavigatorOnHomepage</a></td><td rowspan="1">1684404688042</td><td rowspan="1">10349</td></tr><tr class="passedeven"><td><a href="#m7">verifyCloudTransitionServicesPageOnHomepage</a></td><td rowspan="1">1684404716857</td><td rowspan="1">11154</td></tr><tr class="passedeven"><td><a href="#m8">verifyCustomerEvidenceSectionOnHomepage</a></td><td rowspan="1">1684404698391</td><td rowspan="1">5205</td></tr><tr class="passedeven"><td><a href="#m9">verifyHomepage</a></td><td rowspan="1">1684404688034</td><td rowspan="1">7</td></tr><tr class="passedeven"><td><a href="#m10">verifyViewCampaignPageOnHomepage</a></td><td rowspan="1">1684404703603</td><td rowspan="1">13252</td></tr></tbody>
 </table>
-<h1>Validating IS Catalauge Login page test</h1>
-<h2 id="m1">portfolio_test.user.TC01_UserLoginTest:loginPageTitleTest</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h1>Validating all links and pages present under Home page test</h1>
-<h2 id="m2">portfolio_test.user.TC02_HomePage:verifyHomepage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">portfolio_test.user.TC02_HomePage:verifyViewCampaignPageOnHomepage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">portfolio_test.user.TC02_HomePage:VerifyEurekaPageFromHomepage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m5">portfolio_test.user.TC02_HomePage:VerifyViewalltopoffersPageOnHomepage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m6">portfolio_test.user.TC02_HomePage:verifyCatalogueNavigatorOnHomepage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m7">portfolio_test.user.TC02_HomePage:VerifyCustomerEvidenceSearchPageFromHomepage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m8">portfolio_test.user.TC02_HomePage:verifyCustomerEvidenceSectionOnHomepage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m9">portfolio_test.user.TC02_HomePage:VerifyCloudManagementOperationsPageOnHomepage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m10">portfolio_test.user.TC02_HomePage:VerifyDataStrategyPageOnHomepage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m11">portfolio_test.user.TC02_HomePage:verifyCloudTransitionServicesPageOnHomepage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h1>Validating all links and pages present under Catalogue menu test</h1>
-<h2 id="m12">portfolio_test.user.TC03_CatalogueTest:verifyHealthcareOnCataloguePage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m13">portfolio_test.user.TC03_CatalogueTest:verifyEmergingInnovationEngineeringPageOnCataloguePage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m14">portfolio_test.user.TC03_CatalogueTest:verifyGovernmentOnCataloguePage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m15">portfolio_test.user.TC03_CatalogueTest:verifyFinancialServicesOnCataloguePage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m16">portfolio_test.user.TC03_CatalogueTest:verifyCrossSolutionAreaandFunctionalSolutionOnCataloguePage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m17">portfolio_test.user.TC03_CatalogueTest:verifyCrossIndustryOnCataloguePage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m18">portfolio_test.user.TC03_CatalogueTest:verifyDefenseandIntelligenceOnCataloguePage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m19">portfolio_test.user.TC03_CatalogueTest:verifyTelecommunicationsandMediaOnCataloguePage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m20">portfolio_test.user.TC03_CatalogueTest:verifyAutomotiveMobilityandTransportationOnCataloguePage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m21">portfolio_test.user.TC03_CatalogueTest:verifyEducationOnCataloguePage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m22">portfolio_test.user.TC03_CatalogueTest:verifyRetailandConsumerGoodsOnCataloguePage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m23">portfolio_test.user.TC03_CatalogueTest:verifyInfrastructureOnCataloguePage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m24">portfolio_test.user.TC03_CatalogueTest:verifyModernWorkOnCataloguePage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m25">portfolio_test.user.TC03_CatalogueTest:verifySecurityOnCataloguePage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m26">portfolio_test.user.TC03_CatalogueTest:verifyAdoptionChangeandServicesManagementPageOnCataloguePage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m27">portfolio_test.user.TC03_CatalogueTest:verifyDataandAIOnCataloguePage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m28">portfolio_test.user.TC03_CatalogueTest:verifyIndustrialsandManufacturingOnCataloguePage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m29">portfolio_test.user.TC03_CatalogueTest:verifySustainabilityOnCataloguePage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m30">portfolio_test.user.TC03_CatalogueTest:verifyBusinessAppsPageButtonOnCataloguePage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m31">portfolio_test.user.TC03_CatalogueTest:verifyDigitalandApplicationInnovationOnCataloguePage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m32">portfolio_test.user.TC03_CatalogueTest:verifyEnergyandResourcesOnCataloguePage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h1>Validating all links and pages present under Customer Evidence menu test</h1>
-<h2 id="m33">portfolio_test.user.TC04_CustomerEvidenceTest:verifyEnergyandResourcesCustomerStoriesSearchButtonOnCustomerEvidence</h2>
-<div style="padding-left:3em">
-<p>Expected condition failed: waiting for visibility of [[EdgeDriver: msedge on WINDOWS (87a95b10ebb9524c0aed0a1695a5316c)] -&gt; xpath: //h2[@id=&apos;lblCounter&apos;]] (tried for 50 second(s) with 500 milliseconds interval)</p>
-org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-<br/>at resources.Utilities.waitForElementToBeVisible(Utilities.java:146)
-<br/>at pageObjects.HomePage.CustomerEvidenceSearchResultwaitForElementToBeVisible(HomePage.java:141)
-<br/>at portfolio_test.user.TC04_CustomerEvidenceTest.verifyEnergyandResourcesCustomerStoriesSearchButtonOnCustomerEvidence(TC04_CustomerEvidenceTest.java:184)
-<br/>26 lines not shown
-<p>Caused by no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[@id=&apos;lblCounter&apos;]&quot;}
-  (Session info: MicrosoftEdge=112.0.1722.68)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;HJNZL000593&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2.1&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 112.0.1722.68, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:54164}, msedge: {msedgedriverVersion: 112.0.1722.71 (0dac4e4620b8..., userDataDir: C:\Users\V-SPED~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 87a95b10ebb9524c0aed0a1695a5316c
-*** Element info: {Using=xpath, value=//h2[@id=&apos;lblCounter&apos;]}</p>
-java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-<br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-<br/>at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source)
-<br/>at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-<br/>at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-<br/>at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-<br/>at resources.Utilities.waitForElementToBeVisible(Utilities.java:146)
-<br/>at pageObjects.HomePage.CustomerEvidenceSearchResultwaitForElementToBeVisible(HomePage.java:141)
-<br/>at portfolio_test.user.TC04_CustomerEvidenceTest.verifyEnergyandResourcesCustomerStoriesSearchButtonOnCustomerEvidence(TC04_CustomerEvidenceTest.java:184)
-<br/>26 lines not shown
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m34">portfolio_test.user.TC04_CustomerEvidenceTest:verifySubmitaStoryMenuButtonOncustomerEvidence</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m35">portfolio_test.user.TC04_CustomerEvidenceTest:verifyCustomerEvidanceSearchFunctionOnCustomerEvidence</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m36">portfolio_test.user.TC04_CustomerEvidenceTest:verifyRetailandConsumerGoodsCustomerStoriesSearchButtonOnCustomerEvidence</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m37">portfolio_test.user.TC04_CustomerEvidenceTest:verifyDataAICustomerStoriesSearchButtonOnCustomerEvidence</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m38">portfolio_test.user.TC04_CustomerEvidenceTest:verifySustainabilityCustomerStoriesSearchButtonOnCustomerEvidence</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m39">portfolio_test.user.TC04_CustomerEvidenceTest:verifyclickOncustomerEvidenceWinWiresMenuButtonOnCustomerEvidence</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m40">portfolio_test.user.TC04_CustomerEvidenceTest:verifyWinWiresCustomerStoriesSearchButtonOnCustomerEvidence</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m41">portfolio_test.user.TC04_CustomerEvidenceTest:verifyCustomerEvidenceDeliveryStoriesMenuButtonOnCustomerEvidence</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m42">portfolio_test.user.TC04_CustomerEvidenceTest:verifyHealthcareCustomerStoriesSearchButtonOnCustomerEvidence</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m43">portfolio_test.user.TC04_CustomerEvidenceTest:verifyGovernmentCustomerStoriesSearchButtonOnCustomerEvidence</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m44">portfolio_test.user.TC04_CustomerEvidenceTest:verifyTelecommunicationsandMediaCustomerStoriesSearchButtonOnCustomerEvidence</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m45">portfolio_test.user.TC04_CustomerEvidenceTest:verifyDeliveryStoriesCustomerStoriesSearchButtonOnCustomerEvidence</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m46">portfolio_test.user.TC04_CustomerEvidenceTest:verifyCrossIndustryCustomerStoriesSearchButtonOnCustomerEvidence</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m47">portfolio_test.user.TC04_CustomerEvidenceTest:verifyAutomotiveMobilityandTransportationCustomerStoriesSearchButtonOnCustomerEvidence</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m48">portfolio_test.user.TC04_CustomerEvidenceTest:verifyModernWorkCustomerStoriesSearchButtonOnCustomerEvidence</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m49">portfolio_test.user.TC04_CustomerEvidenceTest:verifyFinancialServicesCustomerStoriesSearchButtonOnCustomerEvidence</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m50">portfolio_test.user.TC04_CustomerEvidenceTest:verifyInfrastructureCustomerStoriesSearchButtonOnCustomerEvidence</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m51">portfolio_test.user.TC04_CustomerEvidenceTest:verifyCustomerEvidanceHomePageOnCustomerEvidence</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m52">portfolio_test.user.TC04_CustomerEvidenceTest:verifyDigitalandApplicationInnovationCustomerStoriesSearchButtonOnCustomerEvidence</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m53">portfolio_test.user.TC04_CustomerEvidenceTest:verifySecurityCustomerStoriesSearchButtonOnCustomerEvidence</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m54">portfolio_test.user.TC04_CustomerEvidenceTest:verifyBusinessAppsCustomerStoriesSearchButtonOnCustomerEvidence</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m55">portfolio_test.user.TC04_CustomerEvidenceTest:verifyEducationCustomerStoriesSearchButtonOnCustomerEvidence</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m56">portfolio_test.user.TC04_CustomerEvidenceTest:verifysubmitNewStoryPageOnCustomerEvidence</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m57">portfolio_test.user.TC04_CustomerEvidenceTest:verifyIndustrialandManufacturingCustomerStoriesSearchButtonOnCustomerEvidence</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m58">portfolio_test.user.TC04_CustomerEvidenceTest:verifyCarouselOnCustomerEvidence</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m59">portfolio_test.user.TC04_CustomerEvidenceTest:verifyclickOnAboutCustomerEvidenceMenuButtonOncustomerEvidence</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m60">portfolio_test.user.TC04_CustomerEvidenceTest:verifyDefenseandIntelligenceCustomerStoriesSearchButtonOnCustomerEvidence</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h1>Validating all links and pages present under Campaigns menu test</h1>
-<h2 id="m61">portfolio_test.user.TC05_CampaignsPage:verifyTopACRandDVGeneratorsPageFromCampaignsMenu</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m62">portfolio_test.user.TC05_CampaignsPage:verifyDoMoreWithLessPageFromCampaignsMenu</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h1>Validating all links and pages present under Resources menu test</h1>
-<h2 id="m63">portfolio_test.user.TC06_ResourcesPage:verifyISSolutionsPlaybookPageFromResourcesMenu</h2>
-<div style="padding-left:3em">
-<p>expected [true] but found [false]</p>
-org.testng.Assert.fail(Assert.java:94)
-<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
-<br/>at org.testng.Assert.assertTrue(Assert.java:42)
-<br/>at org.testng.Assert.assertTrue(Assert.java:52)
-<br/>at portfolio_test.user.TC06_ResourcesPage.verifyISSolutionsPlaybookPageFromResourcesMenu(TC06_ResourcesPage.java:206)
-<br/>26 lines not shown
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m64">portfolio_test.user.TC06_ResourcesPage:verifyISCloudsOverviewPageFromResourcesMenu</h2>
-<div style="padding-left:3em">
-<p>java.lang.reflect.InvocationTargetException
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;HJNZL000593&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2.1&apos;
-Driver info: driver.version: RemoteWebDriver</p>
-org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:332)
-<br/>at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)
-<br/>at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-<br/>at org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)
-<br/>at java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:647)
-<br/>at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)
-<br/>at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-<br/>at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
-<br/>at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)
-<br/>at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
-<br/>at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-<br/>at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)
-<br/>at org.openqa.selenium.json.Json.toJson(Json.java:42)
-<br/>at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)
-<br/>at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
-<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
-<br/>at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
-<br/>at org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
-<br/>at resources.Utilities.clickOnElementUsingActions(Utilities.java:111)
-<br/>at pageObjects.ResourcesPage.clickOnISCloudsOverviewMenuButton(ResourcesPage.java:110)
-<br/>at portfolio_test.user.TC06_ResourcesPage.verifyISCloudsOverviewPageFromResourcesMenu(TC06_ResourcesPage.java:99)
-<br/>26 lines not shown
-<p>Caused by null</p>
-java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:119)
-<br/>at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-<br/>at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:328)
-<br/>at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)
-<br/>at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-<br/>at org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)
-<br/>at java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:647)
-<br/>at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)
-<br/>at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-<br/>at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
-<br/>at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)
-<br/>at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
-<br/>at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-<br/>at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)
-<br/>at org.openqa.selenium.json.Json.toJson(Json.java:42)
-<br/>at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)
-<br/>at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
-<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
-<br/>at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
-<br/>at org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
-<br/>at resources.Utilities.clickOnElementUsingActions(Utilities.java:111)
-<br/>at pageObjects.ResourcesPage.clickOnISCloudsOverviewMenuButton(ResourcesPage.java:110)
-<br/>at portfolio_test.user.TC06_ResourcesPage.verifyISCloudsOverviewPageFromResourcesMenu(TC06_ResourcesPage.java:99)
-<br/>26 lines not shown
-<p>Caused by no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;IS Clouds Overview&apos;)]&quot;}
-  (Session info: MicrosoftEdge=112.0.1722.68)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;HJNZL000593&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2.1&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 112.0.1722.68, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:54382}, msedge: {msedgedriverVersion: 112.0.1722.71 (0dac4e4620b8..., userDataDir: C:\Users\V-SPED~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 53d20e2d294cb89d8b89f7b9a8dd47d0
-*** Element info: {Using=xpath, value=//a[contains(text(),&apos;IS Clouds Overview&apos;)]}</p>
-java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-<br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-<br/>at jdk.proxy2/jdk.proxy2.$Proxy25.getWrappedElement(Unknown Source)
-<br/>at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:204)
-<br/>at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:155)
-<br/>at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:75)
-<br/>at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:84)
-<br/>at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-<br/>at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-<br/>at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:328)
-<br/>at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)
-<br/>at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-<br/>at org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)
-<br/>at java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:647)
-<br/>at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)
-<br/>at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-<br/>at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
-<br/>at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)
-<br/>at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
-<br/>at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-<br/>at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)
-<br/>at org.openqa.selenium.json.Json.toJson(Json.java:42)
-<br/>at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)
-<br/>at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
-<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
-<br/>at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
-<br/>at org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
-<br/>at resources.Utilities.clickOnElementUsingActions(Utilities.java:111)
-<br/>at pageObjects.ResourcesPage.clickOnISCloudsOverviewMenuButton(ResourcesPage.java:110)
-<br/>at portfolio_test.user.TC06_ResourcesPage.verifyISCloudsOverviewPageFromResourcesMenu(TC06_ResourcesPage.java:99)
-<br/>26 lines not shown
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m65">portfolio_test.user.TC06_ResourcesPage:verifyDatabookPageFromResourcesMenu</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m66">portfolio_test.user.TC06_ResourcesPage:verifyFundingPageFromResourcesMenu</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m67">portfolio_test.user.TC06_ResourcesPage:verifyEmergingSolutionsPageFromResourcesMenu</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m68">portfolio_test.user.TC06_ResourcesPage:verifyCustomerHubPageFromResourcesMenu</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m69">portfolio_test.user.TC06_ResourcesPage:verifyCatalogueRoadmapPageFromResourcesMenu</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m70">portfolio_test.user.TC06_ResourcesPage:verifyManageCatalogueSubscriptionsPageFromResourcesMenu</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m71">portfolio_test.user.TC06_ResourcesPage:verifySolutionTruthPageFromResourcesMenu</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m72">portfolio_test.user.TC06_ResourcesPage:verifyAboutISCataloguePageFromResourcesMenu</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-</body></html>
+<h2>Validating IS Catalauge Login page test</h2><h3 id="m0">portfolio_test.user.TC01_UserLoginTest#loginPageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Validating all links and pages present under Home page test</h2><h3 id="m1">portfolio_test.user.TC02_HomePage#VerifyCustomerEvidenceSearchPageFromHomepage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;java.time.temporal.TemporalAmount.addTo(java.time.temporal.Temporal)&quot; because &quot;amountToAdd&quot; is null
+	at java.base/java.time.Instant.plus(Instant.java:790)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at resources.Utilities.waitForElementToBeVisible(Utilities.java:147)
+	at pageObjects.HomePage.CustomerEvidenceSearchResultwaitForElementToBeVisible(HomePage.java:141)
+	at portfolio_test.user.TC02_HomePage.VerifyCustomerEvidenceSearchPageFromHomepage(TC02_HomePage.java:165)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">portfolio_test.user.TC02_HomePage#VerifyEurekaPageFromHomepage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at portfolio_test.user.TC02_HomePage.VerifyEurekaPageFromHomepage(TC02_HomePage.java:184)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">portfolio_test.user.TC02_HomePage#VerifyCloudManagementOperationsPageOnHomepage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">portfolio_test.user.TC02_HomePage#VerifyDataStrategyPageOnHomepage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">portfolio_test.user.TC02_HomePage#VerifyViewalltopoffersPageOnHomepage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">portfolio_test.user.TC02_HomePage#verifyCatalogueNavigatorOnHomepage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">portfolio_test.user.TC02_HomePage#verifyCloudTransitionServicesPageOnHomepage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">portfolio_test.user.TC02_HomePage#verifyCustomerEvidenceSectionOnHomepage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">portfolio_test.user.TC02_HomePage#verifyHomepage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">portfolio_test.user.TC02_HomePage#verifyViewCampaignPageOnHomepage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

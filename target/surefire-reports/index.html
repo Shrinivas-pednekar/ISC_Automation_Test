@@ -2,10 +2,12 @@
 
 <html>
   <head>
+  <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
-    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -19,11 +21,11 @@
      -->
   </head>
 
-  <body>
-    <div class="top-banner-root">
+  <body>    <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -48,12 +50,12 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-IS_Catalauge_Automation_Tests" class="navigator-link ">
-                    <span>C:\Users\v-spednekar\eclipse-workspace\ISCatalogue_Automation\testng.xml</span>
+                    <span>C:\Users\v-spednekar\eclipse-workspace\ISC_Automation_Test\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-IS_Catalauge_Automation_Tests" class="navigator-link ">
-                    <span class="test-stats">6 tests</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">72 methods, 3 failed,   69 passed</span>
+                    <span class="method-stats">11 methods, 2 failed,   9 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,17 +103,12 @@
                     <div class="method-list-content failed suite-IS_Catalauge_Automation_Tests">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC04_CustomerEvidenceTest" class="method navigator-link" hash-for-method="verifyEnergyandResourcesCustomerStoriesSearchButtonOnCustomerEvidence">verifyEnergyandResourcesCustomerStoriesSearchButtonOnCustomerEvidence</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC02_HomePage" class="method navigator-link" hash-for-method="VerifyCustomerEvidenceSearchPageFromHomepage">VerifyCustomerEvidenceSearchPageFromHomepage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC06_ResourcesPage" class="method navigator-link" hash-for-method="verifyISCloudsOverviewPageFromResourcesMenu">verifyISCloudsOverviewPageFromResourcesMenu</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC06_ResourcesPage" class="method navigator-link" hash-for-method="verifyISSolutionsPlaybookPageFromResourcesMenu">verifyISSolutionsPlaybookPageFromResourcesMenu</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC02_HomePage" class="method navigator-link" hash-for-method="VerifyEurekaPageFromHomepage">VerifyEurekaPageFromHomepage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-IS_Catalauge_Automation_Tests -->
@@ -130,17 +127,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC02_HomePage" class="method navigator-link" hash-for-method="VerifyCustomerEvidenceSearchPageFromHomepage">VerifyCustomerEvidenceSearchPageFromHomepage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC02_HomePage" class="method navigator-link" hash-for-method="VerifyDataStrategyPageOnHomepage">VerifyDataStrategyPageOnHomepage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC02_HomePage" class="method navigator-link" hash-for-method="VerifyEurekaPageFromHomepage">VerifyEurekaPageFromHomepage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -155,47 +142,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC06_ResourcesPage" class="method navigator-link" hash-for-method="verifyAboutISCataloguePageFromResourcesMenu">verifyAboutISCataloguePageFromResourcesMenu</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC03_CatalogueTest" class="method navigator-link" hash-for-method="verifyAdoptionChangeandServicesManagementPageOnCataloguePage">verifyAdoptionChangeandServicesManagementPageOnCataloguePage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC04_CustomerEvidenceTest" class="method navigator-link" hash-for-method="verifyAutomotiveMobilityandTransportationCustomerStoriesSearchButtonOnCustomerEvidence">verifyAutomotiveMobilityandTransportationCustomerStoriesSearchButtonOnCustomerEvidence</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC03_CatalogueTest" class="method navigator-link" hash-for-method="verifyAutomotiveMobilityandTransportationOnCataloguePage">verifyAutomotiveMobilityandTransportationOnCataloguePage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC04_CustomerEvidenceTest" class="method navigator-link" hash-for-method="verifyBusinessAppsCustomerStoriesSearchButtonOnCustomerEvidence">verifyBusinessAppsCustomerStoriesSearchButtonOnCustomerEvidence</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC03_CatalogueTest" class="method navigator-link" hash-for-method="verifyBusinessAppsPageButtonOnCataloguePage">verifyBusinessAppsPageButtonOnCataloguePage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC04_CustomerEvidenceTest" class="method navigator-link" hash-for-method="verifyCarouselOnCustomerEvidence">verifyCarouselOnCustomerEvidence</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC02_HomePage" class="method navigator-link" hash-for-method="verifyCatalogueNavigatorOnHomepage">verifyCatalogueNavigatorOnHomepage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC06_ResourcesPage" class="method navigator-link" hash-for-method="verifyCatalogueRoadmapPageFromResourcesMenu">verifyCatalogueRoadmapPageFromResourcesMenu</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -205,147 +152,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC04_CustomerEvidenceTest" class="method navigator-link" hash-for-method="verifyCrossIndustryCustomerStoriesSearchButtonOnCustomerEvidence">verifyCrossIndustryCustomerStoriesSearchButtonOnCustomerEvidence</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC03_CatalogueTest" class="method navigator-link" hash-for-method="verifyCrossIndustryOnCataloguePage">verifyCrossIndustryOnCataloguePage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC03_CatalogueTest" class="method navigator-link" hash-for-method="verifyCrossSolutionAreaandFunctionalSolutionOnCataloguePage">verifyCrossSolutionAreaandFunctionalSolutionOnCataloguePage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC04_CustomerEvidenceTest" class="method navigator-link" hash-for-method="verifyCustomerEvidanceHomePageOnCustomerEvidence">verifyCustomerEvidanceHomePageOnCustomerEvidence</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC04_CustomerEvidenceTest" class="method navigator-link" hash-for-method="verifyCustomerEvidanceSearchFunctionOnCustomerEvidence">verifyCustomerEvidanceSearchFunctionOnCustomerEvidence</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC04_CustomerEvidenceTest" class="method navigator-link" hash-for-method="verifyCustomerEvidenceDeliveryStoriesMenuButtonOnCustomerEvidence">verifyCustomerEvidenceDeliveryStoriesMenuButtonOnCustomerEvidence</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC02_HomePage" class="method navigator-link" hash-for-method="verifyCustomerEvidenceSectionOnHomepage">verifyCustomerEvidenceSectionOnHomepage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC06_ResourcesPage" class="method navigator-link" hash-for-method="verifyCustomerHubPageFromResourcesMenu">verifyCustomerHubPageFromResourcesMenu</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC04_CustomerEvidenceTest" class="method navigator-link" hash-for-method="verifyDataAICustomerStoriesSearchButtonOnCustomerEvidence">verifyDataAICustomerStoriesSearchButtonOnCustomerEvidence</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC03_CatalogueTest" class="method navigator-link" hash-for-method="verifyDataandAIOnCataloguePage">verifyDataandAIOnCataloguePage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC06_ResourcesPage" class="method navigator-link" hash-for-method="verifyDatabookPageFromResourcesMenu">verifyDatabookPageFromResourcesMenu</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC04_CustomerEvidenceTest" class="method navigator-link" hash-for-method="verifyDefenseandIntelligenceCustomerStoriesSearchButtonOnCustomerEvidence">verifyDefenseandIntelligenceCustomerStoriesSearchButtonOnCustomerEvidence</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC03_CatalogueTest" class="method navigator-link" hash-for-method="verifyDefenseandIntelligenceOnCataloguePage">verifyDefenseandIntelligenceOnCataloguePage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC04_CustomerEvidenceTest" class="method navigator-link" hash-for-method="verifyDeliveryStoriesCustomerStoriesSearchButtonOnCustomerEvidence">verifyDeliveryStoriesCustomerStoriesSearchButtonOnCustomerEvidence</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC04_CustomerEvidenceTest" class="method navigator-link" hash-for-method="verifyDigitalandApplicationInnovationCustomerStoriesSearchButtonOnCustomerEvidence">verifyDigitalandApplicationInnovationCustomerStoriesSearchButtonOnCustomerEvidence</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC03_CatalogueTest" class="method navigator-link" hash-for-method="verifyDigitalandApplicationInnovationOnCataloguePage">verifyDigitalandApplicationInnovationOnCataloguePage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC05_CampaignsPage" class="method navigator-link" hash-for-method="verifyDoMoreWithLessPageFromCampaignsMenu">verifyDoMoreWithLessPageFromCampaignsMenu</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC04_CustomerEvidenceTest" class="method navigator-link" hash-for-method="verifyEducationCustomerStoriesSearchButtonOnCustomerEvidence">verifyEducationCustomerStoriesSearchButtonOnCustomerEvidence</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC03_CatalogueTest" class="method navigator-link" hash-for-method="verifyEducationOnCataloguePage">verifyEducationOnCataloguePage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC03_CatalogueTest" class="method navigator-link" hash-for-method="verifyEmergingInnovationEngineeringPageOnCataloguePage">verifyEmergingInnovationEngineeringPageOnCataloguePage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC06_ResourcesPage" class="method navigator-link" hash-for-method="verifyEmergingSolutionsPageFromResourcesMenu">verifyEmergingSolutionsPageFromResourcesMenu</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC03_CatalogueTest" class="method navigator-link" hash-for-method="verifyEnergyandResourcesOnCataloguePage">verifyEnergyandResourcesOnCataloguePage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC04_CustomerEvidenceTest" class="method navigator-link" hash-for-method="verifyFinancialServicesCustomerStoriesSearchButtonOnCustomerEvidence">verifyFinancialServicesCustomerStoriesSearchButtonOnCustomerEvidence</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC03_CatalogueTest" class="method navigator-link" hash-for-method="verifyFinancialServicesOnCataloguePage">verifyFinancialServicesOnCataloguePage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC06_ResourcesPage" class="method navigator-link" hash-for-method="verifyFundingPageFromResourcesMenu">verifyFundingPageFromResourcesMenu</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC04_CustomerEvidenceTest" class="method navigator-link" hash-for-method="verifyGovernmentCustomerStoriesSearchButtonOnCustomerEvidence">verifyGovernmentCustomerStoriesSearchButtonOnCustomerEvidence</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC03_CatalogueTest" class="method navigator-link" hash-for-method="verifyGovernmentOnCataloguePage">verifyGovernmentOnCataloguePage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC04_CustomerEvidenceTest" class="method navigator-link" hash-for-method="verifyHealthcareCustomerStoriesSearchButtonOnCustomerEvidence">verifyHealthcareCustomerStoriesSearchButtonOnCustomerEvidence</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC03_CatalogueTest" class="method navigator-link" hash-for-method="verifyHealthcareOnCataloguePage">verifyHealthcareOnCataloguePage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -355,117 +162,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC04_CustomerEvidenceTest" class="method navigator-link" hash-for-method="verifyIndustrialandManufacturingCustomerStoriesSearchButtonOnCustomerEvidence">verifyIndustrialandManufacturingCustomerStoriesSearchButtonOnCustomerEvidence</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC03_CatalogueTest" class="method navigator-link" hash-for-method="verifyIndustrialsandManufacturingOnCataloguePage">verifyIndustrialsandManufacturingOnCataloguePage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC04_CustomerEvidenceTest" class="method navigator-link" hash-for-method="verifyInfrastructureCustomerStoriesSearchButtonOnCustomerEvidence">verifyInfrastructureCustomerStoriesSearchButtonOnCustomerEvidence</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC03_CatalogueTest" class="method navigator-link" hash-for-method="verifyInfrastructureOnCataloguePage">verifyInfrastructureOnCataloguePage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC06_ResourcesPage" class="method navigator-link" hash-for-method="verifyManageCatalogueSubscriptionsPageFromResourcesMenu">verifyManageCatalogueSubscriptionsPageFromResourcesMenu</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC04_CustomerEvidenceTest" class="method navigator-link" hash-for-method="verifyModernWorkCustomerStoriesSearchButtonOnCustomerEvidence">verifyModernWorkCustomerStoriesSearchButtonOnCustomerEvidence</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC03_CatalogueTest" class="method navigator-link" hash-for-method="verifyModernWorkOnCataloguePage">verifyModernWorkOnCataloguePage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC04_CustomerEvidenceTest" class="method navigator-link" hash-for-method="verifyRetailandConsumerGoodsCustomerStoriesSearchButtonOnCustomerEvidence">verifyRetailandConsumerGoodsCustomerStoriesSearchButtonOnCustomerEvidence</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC03_CatalogueTest" class="method navigator-link" hash-for-method="verifyRetailandConsumerGoodsOnCataloguePage">verifyRetailandConsumerGoodsOnCataloguePage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC04_CustomerEvidenceTest" class="method navigator-link" hash-for-method="verifySecurityCustomerStoriesSearchButtonOnCustomerEvidence">verifySecurityCustomerStoriesSearchButtonOnCustomerEvidence</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC03_CatalogueTest" class="method navigator-link" hash-for-method="verifySecurityOnCataloguePage">verifySecurityOnCataloguePage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC06_ResourcesPage" class="method navigator-link" hash-for-method="verifySolutionTruthPageFromResourcesMenu">verifySolutionTruthPageFromResourcesMenu</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC04_CustomerEvidenceTest" class="method navigator-link" hash-for-method="verifySubmitaStoryMenuButtonOncustomerEvidence">verifySubmitaStoryMenuButtonOncustomerEvidence</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC04_CustomerEvidenceTest" class="method navigator-link" hash-for-method="verifySustainabilityCustomerStoriesSearchButtonOnCustomerEvidence">verifySustainabilityCustomerStoriesSearchButtonOnCustomerEvidence</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC03_CatalogueTest" class="method navigator-link" hash-for-method="verifySustainabilityOnCataloguePage">verifySustainabilityOnCataloguePage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC04_CustomerEvidenceTest" class="method navigator-link" hash-for-method="verifyTelecommunicationsandMediaCustomerStoriesSearchButtonOnCustomerEvidence">verifyTelecommunicationsandMediaCustomerStoriesSearchButtonOnCustomerEvidence</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC03_CatalogueTest" class="method navigator-link" hash-for-method="verifyTelecommunicationsandMediaOnCataloguePage">verifyTelecommunicationsandMediaOnCataloguePage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC05_CampaignsPage" class="method navigator-link" hash-for-method="verifyTopACRandDVGeneratorsPageFromCampaignsMenu">verifyTopACRandDVGeneratorsPageFromCampaignsMenu</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC02_HomePage" class="method navigator-link" hash-for-method="verifyViewCampaignPageOnHomepage">verifyViewCampaignPageOnHomepage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC04_CustomerEvidenceTest" class="method navigator-link" hash-for-method="verifyWinWiresCustomerStoriesSearchButtonOnCustomerEvidence">verifyWinWiresCustomerStoriesSearchButtonOnCustomerEvidence</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC04_CustomerEvidenceTest" class="method navigator-link" hash-for-method="verifyclickOnAboutCustomerEvidenceMenuButtonOncustomerEvidence">verifyclickOnAboutCustomerEvidenceMenuButtonOncustomerEvidence</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC04_CustomerEvidenceTest" class="method navigator-link" hash-for-method="verifyclickOncustomerEvidenceWinWiresMenuButtonOnCustomerEvidence">verifyclickOncustomerEvidenceWinWiresMenuButtonOnCustomerEvidence</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-IS_Catalauge_Automation_Tests" title="portfolio_test.user.TC04_CustomerEvidenceTest" class="method navigator-link" hash-for-method="verifysubmitNewStoryPageOnCustomerEvidence">verifysubmitNewStoryPageOnCustomerEvidence</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-IS_Catalauge_Automation_Tests -->
@@ -483,375 +180,39 @@
           <div class="suite-IS_Catalauge_Automation_Tests-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">portfolio_test.user.TC06_ResourcesPage</span>
+              <span class="class-name">portfolio_test.user.TC02_HomePage</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyISCloudsOverviewPageFromResourcesMenu">
-                  </a> <!-- verifyISCloudsOverviewPageFromResourcesMenu -->
-                  <span class="method-name">verifyISCloudsOverviewPageFromResourcesMenu</span>
-                  <div class="stack-trace"><b>"org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;HJNZL000593&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2.1&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:332)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-	at org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)
-	at java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:647)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-	at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
-	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)
-	at org.openqa.selenium.json.Json.toJson(Json.java:42)
-	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)
-	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
-	at org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
-	at resources.Utilities.clickOnElementUsingActions(Utilities.java:111)
-	at pageObjects.ResourcesPage.clickOnISCloudsOverviewMenuButton(ResourcesPage.java:110)
-	at portfolio_test.user.TC06_ResourcesPage.verifyISCloudsOverviewPageFromResourcesMenu(TC06_ResourcesPage.java:99)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
-	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;HJNZL000593&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2.1&apos;
-Driver info: driver.version: RemoteWebDriver
-		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:279)
-		at org.openqa.selenium.json.Json.toJson(Json.java:44)
-		... 36 more
-	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:328)
-	... 48 more
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;IS Clouds Overview&apos;)]&quot;}
-  (Session info: MicrosoftEdge=112.0.1722.68)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;HJNZL000593&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2.1&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 112.0.1722.68, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:54382}, msedge: {msedgedriverVersion: 112.0.1722.71 (0dac4e4620b8..., userDataDir: C:\Users\V-SPED~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 53d20e2d294cb89d8b89f7b9a8dd47d0
-*** Element info: {Using=xpath, value=//a[contains(text(),&apos;IS Clouds Overview&apos;)]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:204)
-	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:155)
-	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:75)
-	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:84)
-	... 50 more
-... Removed 26 stack frames<br/> org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;HJNZL000593&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2.1&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:332)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-	at org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)
-	at java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:647)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-	at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
-	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)
-	at org.openqa.selenium.json.Json.toJson(Json.java:42)
-	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)
-	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
-	at org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
-	at resources.Utilities.clickOnElementUsingActions(Utilities.java:111)
-	at pageObjects.ResourcesPage.clickOnISCloudsOverviewMenuButton(ResourcesPage.java:110)
-	at portfolio_test.user.TC06_ResourcesPage.verifyISCloudsOverviewPageFromResourcesMenu(TC06_ResourcesPage.java:99)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
-	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;HJNZL000593&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2.1&apos;
-Driver info: driver.version: RemoteWebDriver
-		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:279)
-		at org.openqa.selenium.json.Json.toJson(Json.java:44)
-		... 36 more
-Caused by: java.lang.reflect.InvocationTargetException
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:119)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:328)
-	... 48 more
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;IS Clouds Overview&apos;)]&quot;}
-  (Session info: MicrosoftEdge=112.0.1722.68)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;HJNZL000593&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2.1&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 112.0.1722.68, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:54382}, msedge: {msedgedriverVersion: 112.0.1722.71 (0dac4e4620b8..., userDataDir: C:\Users\V-SPED~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 53d20e2d294cb89d8b89f7b9a8dd47d0
-*** Element info: {Using=xpath, value=//a[contains(text(),&apos;IS Clouds Overview&apos;)]}
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:204)
-	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:155)
-	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:75)
-	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:84)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	... 50 more
-"</b><br>org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:332)<br>org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)<br>org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)<br>org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)<br>java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:647)<br>org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)<br>org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)<br>org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)<br>com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)<br>org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)<br>org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)<br>org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)<br>org.openqa.selenium.json.Json.toJson(Json.java:42)<br>org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)<br>org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)<br>org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)<br>org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br>org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br>org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)<br>org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)<br>org.openqa.selenium.interactions.Actions.perform(Actions.java:595)<br>resources.Utilities.clickOnElementUsingActions(Utilities.java:111)<br>pageObjects.ResourcesPage.clickOnISCloudsOverviewMenuButton(ResourcesPage.java:110)<br>portfolio_test.user.TC06_ResourcesPage.verifyISCloudsOverviewPageFromResourcesMenu(TC06_ResourcesPage.java:99)<br>java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br>java.base/java.lang.reflect.Method.invoke(Method.java:577)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)<br>org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)<br>org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)<br>
+                  <a name="VerifyCustomerEvidenceSearchPageFromHomepage">
+                  </a> <!-- VerifyCustomerEvidenceSearchPageFromHomepage -->
+                  <span class="method-name">VerifyCustomerEvidenceSearchPageFromHomepage</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;java.time.temporal.TemporalAmount.addTo(java.time.temporal.Temporal)&quot; because &quot;amountToAdd&quot; is null
+	at java.base/java.time.Instant.plus(Instant.java:790)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at resources.Utilities.waitForElementToBeVisible(Utilities.java:147)
+	at pageObjects.HomePage.CustomerEvidenceSearchResultwaitForElementToBeVisible(HomePage.java:141)
+	at portfolio_test.user.TC02_HomePage.VerifyCustomerEvidenceSearchPageFromHomepage(TC02_HomePage.java:165)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyISSolutionsPlaybookPageFromResourcesMenu">
-                  </a> <!-- verifyISSolutionsPlaybookPageFromResourcesMenu -->
-                  <span class="method-name">verifyISSolutionsPlaybookPageFromResourcesMenu</span>
-                  <div class="stack-trace"><b>"java.lang.AssertionError: expected [true] but found [false]
-	at portfolio_test.user.TC06_ResourcesPage.verifyISSolutionsPlaybookPageFromResourcesMenu(TC06_ResourcesPage.java:206)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
-... Removed 23 stack frames<br/> java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at portfolio_test.user.TC06_ResourcesPage.verifyISSolutionsPlaybookPageFromResourcesMenu(TC06_ResourcesPage.java:206)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
-"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertTrue(Assert.java:42)<br>org.testng.Assert.assertTrue(Assert.java:52)<br>portfolio_test.user.TC06_ResourcesPage.verifyISSolutionsPlaybookPageFromResourcesMenu(TC06_ResourcesPage.java:206)<br>java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br>java.base/java.lang.reflect.Method.invoke(Method.java:577)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)<br>org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)<br>org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)<br>
+                  <a name="VerifyEurekaPageFromHomepage">
+                  </a> <!-- VerifyEurekaPageFromHomepage -->
+                  <span class="method-name">VerifyEurekaPageFromHomepage</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at portfolio_test.user.TC02_HomePage.VerifyEurekaPageFromHomepage(TC02_HomePage.java:184)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-IS_Catalauge_Automation_Tests-class-failed -->
-          <div class="suite-IS_Catalauge_Automation_Tests-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">portfolio_test.user.TC04_CustomerEvidenceTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyEnergyandResourcesCustomerStoriesSearchButtonOnCustomerEvidence">
-                  </a> <!-- verifyEnergyandResourcesCustomerStoriesSearchButtonOnCustomerEvidence -->
-                  <span class="method-name">verifyEnergyandResourcesCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                  <div class="stack-trace"><b>"org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[EdgeDriver: msedge on WINDOWS (87a95b10ebb9524c0aed0a1695a5316c)] -&gt; xpath: //h2[@id=&apos;lblCounter&apos;]] (tried for 50 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at resources.Utilities.waitForElementToBeVisible(Utilities.java:146)
-	at pageObjects.HomePage.CustomerEvidenceSearchResultwaitForElementToBeVisible(HomePage.java:141)
-	at portfolio_test.user.TC04_CustomerEvidenceTest.verifyEnergyandResourcesCustomerStoriesSearchButtonOnCustomerEvidence(TC04_CustomerEvidenceTest.java:184)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[@id=&apos;lblCounter&apos;]&quot;}
-  (Session info: MicrosoftEdge=112.0.1722.68)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;HJNZL000593&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2.1&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 112.0.1722.68, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:54164}, msedge: {msedgedriverVersion: 112.0.1722.71 (0dac4e4620b8..., userDataDir: C:\Users\V-SPED~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 87a95b10ebb9524c0aed0a1695a5316c
-*** Element info: {Using=xpath, value=//h2[@id=&apos;lblCounter&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 28 more
-... Removed 22 stack frames<br/> org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[EdgeDriver: msedge on WINDOWS (87a95b10ebb9524c0aed0a1695a5316c)] -&gt; xpath: //h2[@id=&apos;lblCounter&apos;]] (tried for 50 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at resources.Utilities.waitForElementToBeVisible(Utilities.java:146)
-	at pageObjects.HomePage.CustomerEvidenceSearchResultwaitForElementToBeVisible(HomePage.java:141)
-	at portfolio_test.user.TC04_CustomerEvidenceTest.verifyEnergyandResourcesCustomerStoriesSearchButtonOnCustomerEvidence(TC04_CustomerEvidenceTest.java:184)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[@id=&apos;lblCounter&apos;]&quot;}
-  (Session info: MicrosoftEdge=112.0.1722.68)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;HJNZL000593&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2.1&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 112.0.1722.68, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:54164}, msedge: {msedgedriverVersion: 112.0.1722.71 (0dac4e4620b8..., userDataDir: C:\Users\V-SPED~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 87a95b10ebb9524c0aed0a1695a5316c
-*** Element info: {Using=xpath, value=//h2[@id=&apos;lblCounter&apos;]}
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 28 more
-"</b><br>org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)<br>org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)<br>resources.Utilities.waitForElementToBeVisible(Utilities.java:146)<br>pageObjects.HomePage.CustomerEvidenceSearchResultwaitForElementToBeVisible(HomePage.java:141)<br>portfolio_test.user.TC04_CustomerEvidenceTest.verifyEnergyandResourcesCustomerStoriesSearchButtonOnCustomerEvidence(TC04_CustomerEvidenceTest.java:184)<br>java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br>java.base/java.lang.reflect.Method.invoke(Method.java:577)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)<br>org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)<br>org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)<br>
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-IS_Catalauge_Automation_Tests-class-failed -->
-          <div class="suite-IS_Catalauge_Automation_Tests-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">portfolio_test.user.TC05_CampaignsPage</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyDoMoreWithLessPageFromCampaignsMenu">
-                  </a> <!-- verifyDoMoreWithLessPageFromCampaignsMenu -->
-                  <span class="method-name">verifyDoMoreWithLessPageFromCampaignsMenu</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyTopACRandDVGeneratorsPageFromCampaignsMenu">
-                  </a> <!-- verifyTopACRandDVGeneratorsPageFromCampaignsMenu -->
-                  <span class="method-name">verifyTopACRandDVGeneratorsPageFromCampaignsMenu</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-IS_Catalauge_Automation_Tests-class-passed -->
           <div class="suite-IS_Catalauge_Automation_Tests-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -867,23 +228,9 @@ Session ID: 87a95b10ebb9524c0aed0a1695a5316c
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="VerifyCustomerEvidenceSearchPageFromHomepage">
-                  </a> <!-- VerifyCustomerEvidenceSearchPageFromHomepage -->
-                  <span class="method-name">VerifyCustomerEvidenceSearchPageFromHomepage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="VerifyDataStrategyPageOnHomepage">
                   </a> <!-- VerifyDataStrategyPageOnHomepage -->
                   <span class="method-name">VerifyDataStrategyPageOnHomepage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="VerifyEurekaPageFromHomepage">
-                  </a> <!-- VerifyEurekaPageFromHomepage -->
-                  <span class="method-name">VerifyEurekaPageFromHomepage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -933,70 +280,6 @@ Session ID: 87a95b10ebb9524c0aed0a1695a5316c
           <div class="suite-IS_Catalauge_Automation_Tests-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">portfolio_test.user.TC06_ResourcesPage</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyAboutISCataloguePageFromResourcesMenu">
-                  </a> <!-- verifyAboutISCataloguePageFromResourcesMenu -->
-                  <span class="method-name">verifyAboutISCataloguePageFromResourcesMenu</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyCatalogueRoadmapPageFromResourcesMenu">
-                  </a> <!-- verifyCatalogueRoadmapPageFromResourcesMenu -->
-                  <span class="method-name">verifyCatalogueRoadmapPageFromResourcesMenu</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyCustomerHubPageFromResourcesMenu">
-                  </a> <!-- verifyCustomerHubPageFromResourcesMenu -->
-                  <span class="method-name">verifyCustomerHubPageFromResourcesMenu</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyDatabookPageFromResourcesMenu">
-                  </a> <!-- verifyDatabookPageFromResourcesMenu -->
-                  <span class="method-name">verifyDatabookPageFromResourcesMenu</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyEmergingSolutionsPageFromResourcesMenu">
-                  </a> <!-- verifyEmergingSolutionsPageFromResourcesMenu -->
-                  <span class="method-name">verifyEmergingSolutionsPageFromResourcesMenu</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyFundingPageFromResourcesMenu">
-                  </a> <!-- verifyFundingPageFromResourcesMenu -->
-                  <span class="method-name">verifyFundingPageFromResourcesMenu</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyManageCatalogueSubscriptionsPageFromResourcesMenu">
-                  </a> <!-- verifyManageCatalogueSubscriptionsPageFromResourcesMenu -->
-                  <span class="method-name">verifyManageCatalogueSubscriptionsPageFromResourcesMenu</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySolutionTruthPageFromResourcesMenu">
-                  </a> <!-- verifySolutionTruthPageFromResourcesMenu -->
-                  <span class="method-name">verifySolutionTruthPageFromResourcesMenu</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-IS_Catalauge_Automation_Tests-class-passed -->
-          <div class="suite-IS_Catalauge_Automation_Tests-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">portfolio_test.user.TC01_UserLoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -1009,401 +292,29 @@ Session ID: 87a95b10ebb9524c0aed0a1695a5316c
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-IS_Catalauge_Automation_Tests-class-passed -->
-          <div class="suite-IS_Catalauge_Automation_Tests-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">portfolio_test.user.TC03_CatalogueTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyAdoptionChangeandServicesManagementPageOnCataloguePage">
-                  </a> <!-- verifyAdoptionChangeandServicesManagementPageOnCataloguePage -->
-                  <span class="method-name">verifyAdoptionChangeandServicesManagementPageOnCataloguePage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyAutomotiveMobilityandTransportationOnCataloguePage">
-                  </a> <!-- verifyAutomotiveMobilityandTransportationOnCataloguePage -->
-                  <span class="method-name">verifyAutomotiveMobilityandTransportationOnCataloguePage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyBusinessAppsPageButtonOnCataloguePage">
-                  </a> <!-- verifyBusinessAppsPageButtonOnCataloguePage -->
-                  <span class="method-name">verifyBusinessAppsPageButtonOnCataloguePage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyCrossIndustryOnCataloguePage">
-                  </a> <!-- verifyCrossIndustryOnCataloguePage -->
-                  <span class="method-name">verifyCrossIndustryOnCataloguePage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyCrossSolutionAreaandFunctionalSolutionOnCataloguePage">
-                  </a> <!-- verifyCrossSolutionAreaandFunctionalSolutionOnCataloguePage -->
-                  <span class="method-name">verifyCrossSolutionAreaandFunctionalSolutionOnCataloguePage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyDataandAIOnCataloguePage">
-                  </a> <!-- verifyDataandAIOnCataloguePage -->
-                  <span class="method-name">verifyDataandAIOnCataloguePage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyDefenseandIntelligenceOnCataloguePage">
-                  </a> <!-- verifyDefenseandIntelligenceOnCataloguePage -->
-                  <span class="method-name">verifyDefenseandIntelligenceOnCataloguePage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyDigitalandApplicationInnovationOnCataloguePage">
-                  </a> <!-- verifyDigitalandApplicationInnovationOnCataloguePage -->
-                  <span class="method-name">verifyDigitalandApplicationInnovationOnCataloguePage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyEducationOnCataloguePage">
-                  </a> <!-- verifyEducationOnCataloguePage -->
-                  <span class="method-name">verifyEducationOnCataloguePage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyEmergingInnovationEngineeringPageOnCataloguePage">
-                  </a> <!-- verifyEmergingInnovationEngineeringPageOnCataloguePage -->
-                  <span class="method-name">verifyEmergingInnovationEngineeringPageOnCataloguePage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyEnergyandResourcesOnCataloguePage">
-                  </a> <!-- verifyEnergyandResourcesOnCataloguePage -->
-                  <span class="method-name">verifyEnergyandResourcesOnCataloguePage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyFinancialServicesOnCataloguePage">
-                  </a> <!-- verifyFinancialServicesOnCataloguePage -->
-                  <span class="method-name">verifyFinancialServicesOnCataloguePage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyGovernmentOnCataloguePage">
-                  </a> <!-- verifyGovernmentOnCataloguePage -->
-                  <span class="method-name">verifyGovernmentOnCataloguePage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyHealthcareOnCataloguePage">
-                  </a> <!-- verifyHealthcareOnCataloguePage -->
-                  <span class="method-name">verifyHealthcareOnCataloguePage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyIndustrialsandManufacturingOnCataloguePage">
-                  </a> <!-- verifyIndustrialsandManufacturingOnCataloguePage -->
-                  <span class="method-name">verifyIndustrialsandManufacturingOnCataloguePage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyInfrastructureOnCataloguePage">
-                  </a> <!-- verifyInfrastructureOnCataloguePage -->
-                  <span class="method-name">verifyInfrastructureOnCataloguePage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyModernWorkOnCataloguePage">
-                  </a> <!-- verifyModernWorkOnCataloguePage -->
-                  <span class="method-name">verifyModernWorkOnCataloguePage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyRetailandConsumerGoodsOnCataloguePage">
-                  </a> <!-- verifyRetailandConsumerGoodsOnCataloguePage -->
-                  <span class="method-name">verifyRetailandConsumerGoodsOnCataloguePage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySecurityOnCataloguePage">
-                  </a> <!-- verifySecurityOnCataloguePage -->
-                  <span class="method-name">verifySecurityOnCataloguePage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySustainabilityOnCataloguePage">
-                  </a> <!-- verifySustainabilityOnCataloguePage -->
-                  <span class="method-name">verifySustainabilityOnCataloguePage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyTelecommunicationsandMediaOnCataloguePage">
-                  </a> <!-- verifyTelecommunicationsandMediaOnCataloguePage -->
-                  <span class="method-name">verifyTelecommunicationsandMediaOnCataloguePage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-IS_Catalauge_Automation_Tests-class-passed -->
-          <div class="suite-IS_Catalauge_Automation_Tests-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">portfolio_test.user.TC04_CustomerEvidenceTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyAutomotiveMobilityandTransportationCustomerStoriesSearchButtonOnCustomerEvidence">
-                  </a> <!-- verifyAutomotiveMobilityandTransportationCustomerStoriesSearchButtonOnCustomerEvidence -->
-                  <span class="method-name">verifyAutomotiveMobilityandTransportationCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyBusinessAppsCustomerStoriesSearchButtonOnCustomerEvidence">
-                  </a> <!-- verifyBusinessAppsCustomerStoriesSearchButtonOnCustomerEvidence -->
-                  <span class="method-name">verifyBusinessAppsCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyCarouselOnCustomerEvidence">
-                  </a> <!-- verifyCarouselOnCustomerEvidence -->
-                  <span class="method-name">verifyCarouselOnCustomerEvidence</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyCrossIndustryCustomerStoriesSearchButtonOnCustomerEvidence">
-                  </a> <!-- verifyCrossIndustryCustomerStoriesSearchButtonOnCustomerEvidence -->
-                  <span class="method-name">verifyCrossIndustryCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyCustomerEvidanceHomePageOnCustomerEvidence">
-                  </a> <!-- verifyCustomerEvidanceHomePageOnCustomerEvidence -->
-                  <span class="method-name">verifyCustomerEvidanceHomePageOnCustomerEvidence</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyCustomerEvidanceSearchFunctionOnCustomerEvidence">
-                  </a> <!-- verifyCustomerEvidanceSearchFunctionOnCustomerEvidence -->
-                  <span class="method-name">verifyCustomerEvidanceSearchFunctionOnCustomerEvidence</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyCustomerEvidenceDeliveryStoriesMenuButtonOnCustomerEvidence">
-                  </a> <!-- verifyCustomerEvidenceDeliveryStoriesMenuButtonOnCustomerEvidence -->
-                  <span class="method-name">verifyCustomerEvidenceDeliveryStoriesMenuButtonOnCustomerEvidence</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyDataAICustomerStoriesSearchButtonOnCustomerEvidence">
-                  </a> <!-- verifyDataAICustomerStoriesSearchButtonOnCustomerEvidence -->
-                  <span class="method-name">verifyDataAICustomerStoriesSearchButtonOnCustomerEvidence</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyDefenseandIntelligenceCustomerStoriesSearchButtonOnCustomerEvidence">
-                  </a> <!-- verifyDefenseandIntelligenceCustomerStoriesSearchButtonOnCustomerEvidence -->
-                  <span class="method-name">verifyDefenseandIntelligenceCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyDeliveryStoriesCustomerStoriesSearchButtonOnCustomerEvidence">
-                  </a> <!-- verifyDeliveryStoriesCustomerStoriesSearchButtonOnCustomerEvidence -->
-                  <span class="method-name">verifyDeliveryStoriesCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyDigitalandApplicationInnovationCustomerStoriesSearchButtonOnCustomerEvidence">
-                  </a> <!-- verifyDigitalandApplicationInnovationCustomerStoriesSearchButtonOnCustomerEvidence -->
-                  <span class="method-name">verifyDigitalandApplicationInnovationCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyEducationCustomerStoriesSearchButtonOnCustomerEvidence">
-                  </a> <!-- verifyEducationCustomerStoriesSearchButtonOnCustomerEvidence -->
-                  <span class="method-name">verifyEducationCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyFinancialServicesCustomerStoriesSearchButtonOnCustomerEvidence">
-                  </a> <!-- verifyFinancialServicesCustomerStoriesSearchButtonOnCustomerEvidence -->
-                  <span class="method-name">verifyFinancialServicesCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyGovernmentCustomerStoriesSearchButtonOnCustomerEvidence">
-                  </a> <!-- verifyGovernmentCustomerStoriesSearchButtonOnCustomerEvidence -->
-                  <span class="method-name">verifyGovernmentCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyHealthcareCustomerStoriesSearchButtonOnCustomerEvidence">
-                  </a> <!-- verifyHealthcareCustomerStoriesSearchButtonOnCustomerEvidence -->
-                  <span class="method-name">verifyHealthcareCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyIndustrialandManufacturingCustomerStoriesSearchButtonOnCustomerEvidence">
-                  </a> <!-- verifyIndustrialandManufacturingCustomerStoriesSearchButtonOnCustomerEvidence -->
-                  <span class="method-name">verifyIndustrialandManufacturingCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyInfrastructureCustomerStoriesSearchButtonOnCustomerEvidence">
-                  </a> <!-- verifyInfrastructureCustomerStoriesSearchButtonOnCustomerEvidence -->
-                  <span class="method-name">verifyInfrastructureCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyModernWorkCustomerStoriesSearchButtonOnCustomerEvidence">
-                  </a> <!-- verifyModernWorkCustomerStoriesSearchButtonOnCustomerEvidence -->
-                  <span class="method-name">verifyModernWorkCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyRetailandConsumerGoodsCustomerStoriesSearchButtonOnCustomerEvidence">
-                  </a> <!-- verifyRetailandConsumerGoodsCustomerStoriesSearchButtonOnCustomerEvidence -->
-                  <span class="method-name">verifyRetailandConsumerGoodsCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySecurityCustomerStoriesSearchButtonOnCustomerEvidence">
-                  </a> <!-- verifySecurityCustomerStoriesSearchButtonOnCustomerEvidence -->
-                  <span class="method-name">verifySecurityCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySubmitaStoryMenuButtonOncustomerEvidence">
-                  </a> <!-- verifySubmitaStoryMenuButtonOncustomerEvidence -->
-                  <span class="method-name">verifySubmitaStoryMenuButtonOncustomerEvidence</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySustainabilityCustomerStoriesSearchButtonOnCustomerEvidence">
-                  </a> <!-- verifySustainabilityCustomerStoriesSearchButtonOnCustomerEvidence -->
-                  <span class="method-name">verifySustainabilityCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyTelecommunicationsandMediaCustomerStoriesSearchButtonOnCustomerEvidence">
-                  </a> <!-- verifyTelecommunicationsandMediaCustomerStoriesSearchButtonOnCustomerEvidence -->
-                  <span class="method-name">verifyTelecommunicationsandMediaCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyWinWiresCustomerStoriesSearchButtonOnCustomerEvidence">
-                  </a> <!-- verifyWinWiresCustomerStoriesSearchButtonOnCustomerEvidence -->
-                  <span class="method-name">verifyWinWiresCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyclickOnAboutCustomerEvidenceMenuButtonOncustomerEvidence">
-                  </a> <!-- verifyclickOnAboutCustomerEvidenceMenuButtonOncustomerEvidence -->
-                  <span class="method-name">verifyclickOnAboutCustomerEvidenceMenuButtonOncustomerEvidence</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyclickOncustomerEvidenceWinWiresMenuButtonOnCustomerEvidence">
-                  </a> <!-- verifyclickOncustomerEvidenceWinWiresMenuButtonOnCustomerEvidence -->
-                  <span class="method-name">verifyclickOncustomerEvidenceWinWiresMenuButtonOnCustomerEvidence</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifysubmitNewStoryPageOnCustomerEvidence">
-                  </a> <!-- verifysubmitNewStoryPageOnCustomerEvidence -->
-                  <span class="method-name">verifysubmitNewStoryPageOnCustomerEvidence</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-IS_Catalauge_Automation_Tests-class-passed -->
         </div> <!-- panel IS_Catalauge_Automation_Tests -->
         <div panel-name="test-xml-IS_Catalauge_Automation_Tests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\v-spednekar\eclipse-workspace\ISCatalogue_Automation\testng.xml</span>
+            <span class="header-content">C:\Users\v-spednekar\eclipse-workspace\ISC_Automation_Test\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite parallel=&quot;none&quot; name=&quot;IS Catalauge Automation Tests&quot; verbose=&quot;0&quot;&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;IS Catalauge Automation Tests&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;isCatalogue_test.Listeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test name=&quot;Validating IS Catalauge Login page test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Validating IS Catalauge Login page test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;portfolio_test.user.TC01_UserLoginTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Validating IS Catalauge Login page test --&gt;
-  &lt;test name=&quot;Validating all links and pages present under Home page test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Validating all links and pages present under Home page test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;portfolio_test.user.TC02_HomePage&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Validating all links and pages present under Home page test --&gt;
-  &lt;test name=&quot;Validating all links and pages present under Catalogue menu test&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;portfolio_test.user.TC03_CatalogueTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Validating all links and pages present under Catalogue menu test --&gt;
-  &lt;test name=&quot;Validating all links and pages present under Customer Evidence menu test&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;portfolio_test.user.TC04_CustomerEvidenceTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Validating all links and pages present under Customer Evidence menu test --&gt;
-  &lt;test name=&quot;Validating all links and pages present under Campaigns menu test&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;portfolio_test.user.TC05_CampaignsPage&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Validating all links and pages present under Campaigns menu test --&gt;
-  &lt;test name=&quot;Validating all links and pages present under Resources menu test&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;portfolio_test.user.TC06_ResourcesPage&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Validating all links and pages present under Resources menu test --&gt;
 &lt;/suite&gt; &lt;!-- IS Catalauge Automation Tests --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -1419,18 +330,6 @@ Session ID: 87a95b10ebb9524c0aed0a1695a5316c
               </li>
               <li>
                 <span class="test-name">Validating all links and pages present under Home page test (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Validating all links and pages present under Catalogue menu test (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Validating all links and pages present under Customer Evidence menu test (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Validating all links and pages present under Campaigns menu test (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Validating all links and pages present under Resources menu test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -1456,300 +355,56 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(72);
+data.addRows(11);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifySecurityOnCataloguePage')
-data.setCell(0, 2, 'portfolio_test.user.TC03_CatalogueTest')
-data.setCell(0, 3, 144687);
+data.setCell(0, 1, 'VerifyDataStrategyPageOnHomepage')
+data.setCell(0, 2, 'portfolio_test.user.TC02_HomePage')
+data.setCell(0, 3, 16514);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyIndustrialsandManufacturingOnCataloguePage')
-data.setCell(1, 2, 'portfolio_test.user.TC03_CatalogueTest')
-data.setCell(1, 3, 94580);
+data.setCell(1, 1, 'verifyViewCampaignPageOnHomepage')
+data.setCell(1, 2, 'portfolio_test.user.TC02_HomePage')
+data.setCell(1, 3, 13252);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyBusinessAppsPageButtonOnCataloguePage')
-data.setCell(2, 2, 'portfolio_test.user.TC03_CatalogueTest')
-data.setCell(2, 3, 71725);
+data.setCell(2, 1, 'verifyCloudTransitionServicesPageOnHomepage')
+data.setCell(2, 2, 'portfolio_test.user.TC02_HomePage')
+data.setCell(2, 3, 11154);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyModernWorkOnCataloguePage')
-data.setCell(3, 2, 'portfolio_test.user.TC03_CatalogueTest')
-data.setCell(3, 3, 65550);
+data.setCell(3, 1, 'VerifyViewalltopoffersPageOnHomepage')
+data.setCell(3, 2, 'portfolio_test.user.TC02_HomePage')
+data.setCell(3, 3, 10431);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyDataandAIOnCataloguePage')
-data.setCell(4, 2, 'portfolio_test.user.TC03_CatalogueTest')
-data.setCell(4, 3, 64300);
+data.setCell(4, 1, 'VerifyCloudManagementOperationsPageOnHomepage')
+data.setCell(4, 2, 'portfolio_test.user.TC02_HomePage')
+data.setCell(4, 3, 10380);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyEnergyandResourcesCustomerStoriesSearchButtonOnCustomerEvidence')
-data.setCell(5, 2, 'portfolio_test.user.TC04_CustomerEvidenceTest')
-data.setCell(5, 3, 63560);
+data.setCell(5, 1, 'verifyCatalogueNavigatorOnHomepage')
+data.setCell(5, 2, 'portfolio_test.user.TC02_HomePage')
+data.setCell(5, 3, 10349);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifyDigitalandApplicationInnovationOnCataloguePage')
-data.setCell(6, 2, 'portfolio_test.user.TC03_CatalogueTest')
-data.setCell(6, 3, 57373);
+data.setCell(6, 1, 'VerifyCustomerEvidenceSearchPageFromHomepage')
+data.setCell(6, 2, 'portfolio_test.user.TC02_HomePage')
+data.setCell(6, 3, 5340);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verifyInfrastructureOnCataloguePage')
-data.setCell(7, 2, 'portfolio_test.user.TC03_CatalogueTest')
-data.setCell(7, 3, 54681);
+data.setCell(7, 1, 'VerifyEurekaPageFromHomepage')
+data.setCell(7, 2, 'portfolio_test.user.TC02_HomePage')
+data.setCell(7, 3, 5321);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verifyAutomotiveMobilityandTransportationOnCataloguePage')
-data.setCell(8, 2, 'portfolio_test.user.TC03_CatalogueTest')
-data.setCell(8, 3, 52786);
+data.setCell(8, 1, 'verifyCustomerEvidenceSectionOnHomepage')
+data.setCell(8, 2, 'portfolio_test.user.TC02_HomePage')
+data.setCell(8, 3, 5205);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'verifyAdoptionChangeandServicesManagementPageOnCataloguePage')
-data.setCell(9, 2, 'portfolio_test.user.TC03_CatalogueTest')
-data.setCell(9, 3, 48620);
+data.setCell(9, 1, 'loginPageTitleTest')
+data.setCell(9, 2, 'portfolio_test.user.TC01_UserLoginTest')
+data.setCell(9, 3, 3061);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'verifySecurityCustomerStoriesSearchButtonOnCustomerEvidence')
-data.setCell(10, 2, 'portfolio_test.user.TC04_CustomerEvidenceTest')
-data.setCell(10, 3, 43987);
-data.setCell(11, 0, 11)
-data.setCell(11, 1, 'verifyDefenseandIntelligenceCustomerStoriesSearchButtonOnCustomerEvidence')
-data.setCell(11, 2, 'portfolio_test.user.TC04_CustomerEvidenceTest')
-data.setCell(11, 3, 43817);
-data.setCell(12, 0, 12)
-data.setCell(12, 1, 'verifyBusinessAppsCustomerStoriesSearchButtonOnCustomerEvidence')
-data.setCell(12, 2, 'portfolio_test.user.TC04_CustomerEvidenceTest')
-data.setCell(12, 3, 40093);
-data.setCell(13, 0, 13)
-data.setCell(13, 1, 'verifyEmergingInnovationEngineeringPageOnCataloguePage')
-data.setCell(13, 2, 'portfolio_test.user.TC03_CatalogueTest')
-data.setCell(13, 3, 38172);
-data.setCell(14, 0, 14)
-data.setCell(14, 1, 'verifyGovernmentCustomerStoriesSearchButtonOnCustomerEvidence')
-data.setCell(14, 2, 'portfolio_test.user.TC04_CustomerEvidenceTest')
-data.setCell(14, 3, 37896);
-data.setCell(15, 0, 15)
-data.setCell(15, 1, 'verifyCrossSolutionAreaandFunctionalSolutionOnCataloguePage')
-data.setCell(15, 2, 'portfolio_test.user.TC03_CatalogueTest')
-data.setCell(15, 3, 37259);
-data.setCell(16, 0, 16)
-data.setCell(16, 1, 'VerifyCustomerEvidenceSearchPageFromHomepage')
-data.setCell(16, 2, 'portfolio_test.user.TC02_HomePage')
-data.setCell(16, 3, 32281);
-data.setCell(17, 0, 17)
-data.setCell(17, 1, 'verifyEducationCustomerStoriesSearchButtonOnCustomerEvidence')
-data.setCell(17, 2, 'portfolio_test.user.TC04_CustomerEvidenceTest')
-data.setCell(17, 3, 29919);
-data.setCell(18, 0, 18)
-data.setCell(18, 1, 'verifyDigitalandApplicationInnovationCustomerStoriesSearchButtonOnCustomerEvidence')
-data.setCell(18, 2, 'portfolio_test.user.TC04_CustomerEvidenceTest')
-data.setCell(18, 3, 27899);
-data.setCell(19, 0, 19)
-data.setCell(19, 1, 'verifyclickOncustomerEvidenceWinWiresMenuButtonOnCustomerEvidence')
-data.setCell(19, 2, 'portfolio_test.user.TC04_CustomerEvidenceTest')
-data.setCell(19, 3, 27753);
-data.setCell(20, 0, 20)
-data.setCell(20, 1, 'verifyDataAICustomerStoriesSearchButtonOnCustomerEvidence')
-data.setCell(20, 2, 'portfolio_test.user.TC04_CustomerEvidenceTest')
-data.setCell(20, 3, 27492);
-data.setCell(21, 0, 21)
-data.setCell(21, 1, 'verifyWinWiresCustomerStoriesSearchButtonOnCustomerEvidence')
-data.setCell(21, 2, 'portfolio_test.user.TC04_CustomerEvidenceTest')
-data.setCell(21, 3, 27317);
-data.setCell(22, 0, 22)
-data.setCell(22, 1, 'verifyFinancialServicesCustomerStoriesSearchButtonOnCustomerEvidence')
-data.setCell(22, 2, 'portfolio_test.user.TC04_CustomerEvidenceTest')
-data.setCell(22, 3, 26228);
-data.setCell(23, 0, 23)
-data.setCell(23, 1, 'verifyIndustrialandManufacturingCustomerStoriesSearchButtonOnCustomerEvidence')
-data.setCell(23, 2, 'portfolio_test.user.TC04_CustomerEvidenceTest')
-data.setCell(23, 3, 25540);
-data.setCell(24, 0, 24)
-data.setCell(24, 1, 'verifyRetailandConsumerGoodsCustomerStoriesSearchButtonOnCustomerEvidence')
-data.setCell(24, 2, 'portfolio_test.user.TC04_CustomerEvidenceTest')
-data.setCell(24, 3, 25428);
-data.setCell(25, 0, 25)
-data.setCell(25, 1, 'verifyModernWorkCustomerStoriesSearchButtonOnCustomerEvidence')
-data.setCell(25, 2, 'portfolio_test.user.TC04_CustomerEvidenceTest')
-data.setCell(25, 3, 25113);
-data.setCell(26, 0, 26)
-data.setCell(26, 1, 'verifyCustomerEvidenceDeliveryStoriesMenuButtonOnCustomerEvidence')
-data.setCell(26, 2, 'portfolio_test.user.TC04_CustomerEvidenceTest')
-data.setCell(26, 3, 25040);
-data.setCell(27, 0, 27)
-data.setCell(27, 1, 'verifySustainabilityCustomerStoriesSearchButtonOnCustomerEvidence')
-data.setCell(27, 2, 'portfolio_test.user.TC04_CustomerEvidenceTest')
-data.setCell(27, 3, 22439);
-data.setCell(28, 0, 28)
-data.setCell(28, 1, 'verifyDeliveryStoriesCustomerStoriesSearchButtonOnCustomerEvidence')
-data.setCell(28, 2, 'portfolio_test.user.TC04_CustomerEvidenceTest')
-data.setCell(28, 3, 22430);
-data.setCell(29, 0, 29)
-data.setCell(29, 1, 'verifyEnergyandResourcesOnCataloguePage')
-data.setCell(29, 2, 'portfolio_test.user.TC03_CatalogueTest')
-data.setCell(29, 3, 21430);
-data.setCell(30, 0, 30)
-data.setCell(30, 1, 'verifyTelecommunicationsandMediaCustomerStoriesSearchButtonOnCustomerEvidence')
-data.setCell(30, 2, 'portfolio_test.user.TC04_CustomerEvidenceTest')
-data.setCell(30, 3, 20996);
-data.setCell(31, 0, 31)
-data.setCell(31, 1, 'verifyFinancialServicesOnCataloguePage')
-data.setCell(31, 2, 'portfolio_test.user.TC03_CatalogueTest')
-data.setCell(31, 3, 20330);
-data.setCell(32, 0, 32)
-data.setCell(32, 1, 'verifySustainabilityOnCataloguePage')
-data.setCell(32, 2, 'portfolio_test.user.TC03_CatalogueTest')
-data.setCell(32, 3, 20323);
-data.setCell(33, 0, 33)
-data.setCell(33, 1, 'verifyAutomotiveMobilityandTransportationCustomerStoriesSearchButtonOnCustomerEvidence')
-data.setCell(33, 2, 'portfolio_test.user.TC04_CustomerEvidenceTest')
-data.setCell(33, 3, 19789);
-data.setCell(34, 0, 34)
-data.setCell(34, 1, 'VerifyDataStrategyPageOnHomepage')
-data.setCell(34, 2, 'portfolio_test.user.TC02_HomePage')
-data.setCell(34, 3, 19120);
-data.setCell(35, 0, 35)
-data.setCell(35, 1, 'verifyHealthcareOnCataloguePage')
-data.setCell(35, 2, 'portfolio_test.user.TC03_CatalogueTest')
-data.setCell(35, 3, 18841);
-data.setCell(36, 0, 36)
-data.setCell(36, 1, 'verifyInfrastructureCustomerStoriesSearchButtonOnCustomerEvidence')
-data.setCell(36, 2, 'portfolio_test.user.TC04_CustomerEvidenceTest')
-data.setCell(36, 3, 18517);
-data.setCell(37, 0, 37)
-data.setCell(37, 1, 'verifyCustomerEvidanceHomePageOnCustomerEvidence')
-data.setCell(37, 2, 'portfolio_test.user.TC04_CustomerEvidenceTest')
-data.setCell(37, 3, 17571);
-data.setCell(38, 0, 38)
-data.setCell(38, 1, 'verifyCustomerHubPageFromResourcesMenu')
-data.setCell(38, 2, 'portfolio_test.user.TC06_ResourcesPage')
-data.setCell(38, 3, 17399);
-data.setCell(39, 0, 39)
-data.setCell(39, 1, 'verifyEducationOnCataloguePage')
-data.setCell(39, 2, 'portfolio_test.user.TC03_CatalogueTest')
-data.setCell(39, 3, 16756);
-data.setCell(40, 0, 40)
-data.setCell(40, 1, 'verifyRetailandConsumerGoodsOnCataloguePage')
-data.setCell(40, 2, 'portfolio_test.user.TC03_CatalogueTest')
-data.setCell(40, 3, 16748);
-data.setCell(41, 0, 41)
-data.setCell(41, 1, 'verifyDefenseandIntelligenceOnCataloguePage')
-data.setCell(41, 2, 'portfolio_test.user.TC03_CatalogueTest')
-data.setCell(41, 3, 16680);
-data.setCell(42, 0, 42)
-data.setCell(42, 1, 'verifyCrossIndustryOnCataloguePage')
-data.setCell(42, 2, 'portfolio_test.user.TC03_CatalogueTest')
-data.setCell(42, 3, 16340);
-data.setCell(43, 0, 43)
-data.setCell(43, 1, 'verifySubmitaStoryMenuButtonOncustomerEvidence')
-data.setCell(43, 2, 'portfolio_test.user.TC04_CustomerEvidenceTest')
-data.setCell(43, 3, 16262);
-data.setCell(44, 0, 44)
-data.setCell(44, 1, 'verifyGovernmentOnCataloguePage')
-data.setCell(44, 2, 'portfolio_test.user.TC03_CatalogueTest')
-data.setCell(44, 3, 16063);
-data.setCell(45, 0, 45)
-data.setCell(45, 1, 'verifyTopACRandDVGeneratorsPageFromCampaignsMenu')
-data.setCell(45, 2, 'portfolio_test.user.TC05_CampaignsPage')
-data.setCell(45, 3, 15788);
-data.setCell(46, 0, 46)
-data.setCell(46, 1, 'verifyHealthcareCustomerStoriesSearchButtonOnCustomerEvidence')
-data.setCell(46, 2, 'portfolio_test.user.TC04_CustomerEvidenceTest')
-data.setCell(46, 3, 15125);
-data.setCell(47, 0, 47)
-data.setCell(47, 1, 'verifyISSolutionsPlaybookPageFromResourcesMenu')
-data.setCell(47, 2, 'portfolio_test.user.TC06_ResourcesPage')
-data.setCell(47, 3, 14862);
-data.setCell(48, 0, 48)
-data.setCell(48, 1, 'verifyViewCampaignPageOnHomepage')
-data.setCell(48, 2, 'portfolio_test.user.TC02_HomePage')
-data.setCell(48, 3, 14807);
-data.setCell(49, 0, 49)
-data.setCell(49, 1, 'verifysubmitNewStoryPageOnCustomerEvidence')
-data.setCell(49, 2, 'portfolio_test.user.TC04_CustomerEvidenceTest')
-data.setCell(49, 3, 13518);
-data.setCell(50, 0, 50)
-data.setCell(50, 1, 'verifyTelecommunicationsandMediaOnCataloguePage')
-data.setCell(50, 2, 'portfolio_test.user.TC03_CatalogueTest')
-data.setCell(50, 3, 13342);
-data.setCell(51, 0, 51)
-data.setCell(51, 1, 'VerifyViewalltopoffersPageOnHomepage')
-data.setCell(51, 2, 'portfolio_test.user.TC02_HomePage')
-data.setCell(51, 3, 13212);
-data.setCell(52, 0, 52)
-data.setCell(52, 1, 'verifyCustomerEvidanceSearchFunctionOnCustomerEvidence')
-data.setCell(52, 2, 'portfolio_test.user.TC04_CustomerEvidenceTest')
-data.setCell(52, 3, 12777);
-data.setCell(53, 0, 53)
-data.setCell(53, 1, 'verifyclickOnAboutCustomerEvidenceMenuButtonOncustomerEvidence')
-data.setCell(53, 2, 'portfolio_test.user.TC04_CustomerEvidenceTest')
-data.setCell(53, 3, 12362);
-data.setCell(54, 0, 54)
-data.setCell(54, 1, 'verifyCloudTransitionServicesPageOnHomepage')
-data.setCell(54, 2, 'portfolio_test.user.TC02_HomePage')
-data.setCell(54, 3, 11147);
-data.setCell(55, 0, 55)
-data.setCell(55, 1, 'verifyCatalogueNavigatorOnHomepage')
-data.setCell(55, 2, 'portfolio_test.user.TC02_HomePage')
-data.setCell(55, 3, 10805);
-data.setCell(56, 0, 56)
-data.setCell(56, 1, 'VerifyCloudManagementOperationsPageOnHomepage')
-data.setCell(56, 2, 'portfolio_test.user.TC02_HomePage')
-data.setCell(56, 3, 10687);
-data.setCell(57, 0, 57)
-data.setCell(57, 1, 'verifyEmergingSolutionsPageFromResourcesMenu')
-data.setCell(57, 2, 'portfolio_test.user.TC06_ResourcesPage')
-data.setCell(57, 3, 9268);
-data.setCell(58, 0, 58)
-data.setCell(58, 1, 'verifyCatalogueRoadmapPageFromResourcesMenu')
-data.setCell(58, 2, 'portfolio_test.user.TC06_ResourcesPage')
-data.setCell(58, 3, 8153);
-data.setCell(59, 0, 59)
-data.setCell(59, 1, 'verifyISCloudsOverviewPageFromResourcesMenu')
-data.setCell(59, 2, 'portfolio_test.user.TC06_ResourcesPage')
-data.setCell(59, 3, 8095);
-data.setCell(60, 0, 60)
-data.setCell(60, 1, 'VerifyEurekaPageFromHomepage')
-data.setCell(60, 2, 'portfolio_test.user.TC02_HomePage')
-data.setCell(60, 3, 8033);
-data.setCell(61, 0, 61)
-data.setCell(61, 1, 'verifyCrossIndustryCustomerStoriesSearchButtonOnCustomerEvidence')
-data.setCell(61, 2, 'portfolio_test.user.TC04_CustomerEvidenceTest')
-data.setCell(61, 3, 7957);
-data.setCell(62, 0, 62)
-data.setCell(62, 1, 'verifyDatabookPageFromResourcesMenu')
-data.setCell(62, 2, 'portfolio_test.user.TC06_ResourcesPage')
-data.setCell(62, 3, 7621);
-data.setCell(63, 0, 63)
-data.setCell(63, 1, 'verifyManageCatalogueSubscriptionsPageFromResourcesMenu')
-data.setCell(63, 2, 'portfolio_test.user.TC06_ResourcesPage')
-data.setCell(63, 3, 7553);
-data.setCell(64, 0, 64)
-data.setCell(64, 1, 'verifyCustomerEvidenceSectionOnHomepage')
-data.setCell(64, 2, 'portfolio_test.user.TC02_HomePage')
-data.setCell(64, 3, 5356);
-data.setCell(65, 0, 65)
-data.setCell(65, 1, 'verifyDoMoreWithLessPageFromCampaignsMenu')
-data.setCell(65, 2, 'portfolio_test.user.TC05_CampaignsPage')
-data.setCell(65, 3, 5326);
-data.setCell(66, 0, 66)
-data.setCell(66, 1, 'verifySolutionTruthPageFromResourcesMenu')
-data.setCell(66, 2, 'portfolio_test.user.TC06_ResourcesPage')
-data.setCell(66, 3, 3450);
-data.setCell(67, 0, 67)
-data.setCell(67, 1, 'verifyAboutISCataloguePageFromResourcesMenu')
-data.setCell(67, 2, 'portfolio_test.user.TC06_ResourcesPage')
-data.setCell(67, 3, 3297);
-data.setCell(68, 0, 68)
-data.setCell(68, 1, 'verifyFundingPageFromResourcesMenu')
-data.setCell(68, 2, 'portfolio_test.user.TC06_ResourcesPage')
-data.setCell(68, 3, 3274);
-data.setCell(69, 0, 69)
-data.setCell(69, 1, 'loginPageTitleTest')
-data.setCell(69, 2, 'portfolio_test.user.TC01_UserLoginTest')
-data.setCell(69, 3, 3020);
-data.setCell(70, 0, 70)
-data.setCell(70, 1, 'verifyCarouselOnCustomerEvidence')
-data.setCell(70, 2, 'portfolio_test.user.TC04_CustomerEvidenceTest')
-data.setCell(70, 3, 57);
-data.setCell(71, 0, 71)
-data.setCell(71, 1, 'verifyHomepage')
-data.setCell(71, 2, 'portfolio_test.user.TC02_HomePage')
-data.setCell(71, 3, 16);
+data.setCell(10, 1, 'verifyHomepage')
+data.setCell(10, 2, 'portfolio_test.user.TC02_HomePage')
+data.setCell(10, 3, 7);
 window.suiteTableData['IS_Catalauge_Automation_Tests']= { tableData: data, tableDiv: 'times-div-IS_Catalauge_Automation_Tests'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 30 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-IS_Catalauge_Automation_Tests">
               </div> <!-- times-div-IS_Catalauge_Automation_Tests -->
             </div> <!-- times-div -->
@@ -1764,18 +419,11 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-IS_Catalauge_Automation_Tests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">portfolio_test.user.TC02_HomePage</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">testBrokenLinks</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">portfolio_test.user.TC03_CatalogueTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">testBrokenLinks</span>
                 <br/>
@@ -1796,360 +444,71 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">loginPageTitleTest</span>
-                <span class="method-start">48764 ms</span>
+                <span class="method-start">34016 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">51799 ms</span>
+                <span class="method-start">37091 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">portfolio_test.user.TC02_HomePage</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">53015 ms</span>
+                <span class="method-start">37873 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">verifyHomepage</span>
-                <span class="method-start">100308 ms</span>
+                <span class="method-start">72999 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyCatalogueNavigatorOnHomepage</span>
-                <span class="method-start">100324 ms</span>
+                <span class="method-start">73007 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyCustomerEvidenceSectionOnHomepage</span>
-                <span class="method-start">111129 ms</span>
+                <span class="method-start">83356 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyViewCampaignPageOnHomepage</span>
-                <span class="method-start">116485 ms</span>
+                <span class="method-start">88568 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyCloudTransitionServicesPageOnHomepage</span>
-                <span class="method-start">131292 ms</span>
+                <span class="method-start">101822 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">VerifyCloudManagementOperationsPageOnHomepage</span>
-                <span class="method-start">142439 ms</span>
+                <span class="method-start">112976 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">VerifyDataStrategyPageOnHomepage</span>
-                <span class="method-start">153126 ms</span>
+                <span class="method-start">123359 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">VerifyViewalltopoffersPageOnHomepage</span>
-                <span class="method-start">172246 ms</span>
+                <span class="method-start">139875 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">VerifyCustomerEvidenceSearchPageFromHomepage</span>
-                <span class="method-start">185458 ms</span>
+                <span class="method-start">150308 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">VerifyEurekaPageFromHomepage</span>
-                <span class="method-start">217739 ms</span>
+                <span class="method-start">155840 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">225772 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">portfolio_test.user.TC03_CatalogueTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">initialize</span>
-                <span class="method-start">226339 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <span class="method-name">verifyEmergingInnovationEngineeringPageOnCataloguePage</span>
-                <span class="method-start">273793 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyAdoptionChangeandServicesManagementPageOnCataloguePage</span>
-                <span class="method-start">311965 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyBusinessAppsPageButtonOnCataloguePage</span>
-                <span class="method-start">360585 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyCrossSolutionAreaandFunctionalSolutionOnCataloguePage</span>
-                <span class="method-start">432310 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyDigitalandApplicationInnovationOnCataloguePage</span>
-                <span class="method-start">469569 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyDataandAIOnCataloguePage</span>
-                <span class="method-start">526942 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyInfrastructureOnCataloguePage</span>
-                <span class="method-start">591242 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyModernWorkOnCataloguePage</span>
-                <span class="method-start">645923 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifySecurityOnCataloguePage</span>
-                <span class="method-start">711473 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyAutomotiveMobilityandTransportationOnCataloguePage</span>
-                <span class="method-start">856160 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyCrossIndustryOnCataloguePage</span>
-                <span class="method-start">908946 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyDefenseandIntelligenceOnCataloguePage</span>
-                <span class="method-start">925286 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyEducationOnCataloguePage</span>
-                <span class="method-start">941966 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyEnergyandResourcesOnCataloguePage</span>
-                <span class="method-start">958722 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyFinancialServicesOnCataloguePage</span>
-                <span class="method-start">980152 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyGovernmentOnCataloguePage</span>
-                <span class="method-start">1000482 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyHealthcareOnCataloguePage</span>
-                <span class="method-start">1016545 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyIndustrialsandManufacturingOnCataloguePage</span>
-                <span class="method-start">1035386 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyRetailandConsumerGoodsOnCataloguePage</span>
-                <span class="method-start">1129966 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifySustainabilityOnCataloguePage</span>
-                <span class="method-start">1146714 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyTelecommunicationsandMediaOnCataloguePage</span>
-                <span class="method-start">1167037 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">1180379 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">portfolio_test.user.TC04_CustomerEvidenceTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">initialize</span>
-                <span class="method-start">1181263 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <span class="method-name">verifyCustomerEvidanceHomePageOnCustomerEvidence</span>
-                <span class="method-start">1228292 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyCarouselOnCustomerEvidence</span>
-                <span class="method-start">1245863 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifysubmitNewStoryPageOnCustomerEvidence</span>
-                <span class="method-start">1245920 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyCustomerEvidanceSearchFunctionOnCustomerEvidence</span>
-                <span class="method-start">1259439 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyAutomotiveMobilityandTransportationCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                <span class="method-start">1272216 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyCrossIndustryCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                <span class="method-start">1292005 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyDefenseandIntelligenceCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                <span class="method-start">1299962 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyEducationCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                <span class="method-start">1343785 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyEnergyandResourcesCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                <span class="method-start">1373704 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyFinancialServicesCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                <span class="method-start">1437780 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyGovernmentCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                <span class="method-start">1464017 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyHealthcareCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                <span class="method-start">1501913 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyIndustrialandManufacturingCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                <span class="method-start">1517038 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyRetailandConsumerGoodsCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                <span class="method-start">1542586 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifySustainabilityCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                <span class="method-start">1568014 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyTelecommunicationsandMediaCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                <span class="method-start">1590453 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyBusinessAppsCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                <span class="method-start">1611449 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyDataAICustomerStoriesSearchButtonOnCustomerEvidence</span>
-                <span class="method-start">1651543 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyDigitalandApplicationInnovationCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                <span class="method-start">1679035 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyInfrastructureCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                <span class="method-start">1706934 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyModernWorkCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                <span class="method-start">1725451 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifySecurityCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                <span class="method-start">1750564 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyWinWiresCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                <span class="method-start">1794551 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyDeliveryStoriesCustomerStoriesSearchButtonOnCustomerEvidence</span>
-                <span class="method-start">1821868 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyclickOncustomerEvidenceWinWiresMenuButtonOnCustomerEvidence</span>
-                <span class="method-start">1844298 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyCustomerEvidenceDeliveryStoriesMenuButtonOnCustomerEvidence</span>
-                <span class="method-start">1872051 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifySubmitaStoryMenuButtonOncustomerEvidence</span>
-                <span class="method-start">1897091 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyclickOnAboutCustomerEvidenceMenuButtonOncustomerEvidence</span>
-                <span class="method-start">1913353 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">1925722 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">portfolio_test.user.TC05_CampaignsPage</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">initialize</span>
-                <span class="method-start">1926637 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <span class="method-name">verifyTopACRandDVGeneratorsPageFromCampaignsMenu</span>
-                <span class="method-start">1974421 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyDoMoreWithLessPageFromCampaignsMenu</span>
-                <span class="method-start">1990209 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">1995535 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">portfolio_test.user.TC06_ResourcesPage</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">initialize</span>
-                <span class="method-start">1996139 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyISCloudsOverviewPageFromResourcesMenu</span>
-                <span class="method-start">2041914 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyCustomerHubPageFromResourcesMenu</span>
-                <span class="method-start">2051209 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyDatabookPageFromResourcesMenu</span>
-                <span class="method-start">2068608 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyFundingPageFromResourcesMenu</span>
-                <span class="method-start">2076229 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyAboutISCataloguePageFromResourcesMenu</span>
-                <span class="method-start">2079503 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyEmergingSolutionsPageFromResourcesMenu</span>
-                <span class="method-start">2082800 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyManageCatalogueSubscriptionsPageFromResourcesMenu</span>
-                <span class="method-start">2092068 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyCatalogueRoadmapPageFromResourcesMenu</span>
-                <span class="method-start">2099621 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifySolutionTruthPageFromResourcesMenu</span>
-                <span class="method-start">2107774 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyISSolutionsPlaybookPageFromResourcesMenu</span>
-                <span class="method-start">2111224 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">2126324 ms</span>
+                <span class="method-start">161667 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
 </html>

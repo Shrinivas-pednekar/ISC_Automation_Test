@@ -1,44 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 72, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 2,129.326 s <<< FAILURE! - in TestSuite
-verifyEnergyandResourcesCustomerStoriesSearchButtonOnCustomerEvidence(portfolio_test.user.TC04_CustomerEvidenceTest)  Time elapsed: 63.569 s  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[EdgeDriver: msedge on WINDOWS (87a95b10ebb9524c0aed0a1695a5316c)] -> xpath: //h2[@id='lblCounter']] (tried for 50 second(s) with 500 milliseconds interval)
-	at portfolio_test.user.TC04_CustomerEvidenceTest.verifyEnergyandResourcesCustomerStoriesSearchButtonOnCustomerEvidence(TC04_CustomerEvidenceTest.java:184)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//h2[@id='lblCounter']"}
-  (Session info: MicrosoftEdge=112.0.1722.68)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'HJNZL000593', ip: '192.168.1.11', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 112.0.1722.68, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:54164}, msedge: {msedgedriverVersion: 112.0.1722.71 (0dac4e4620b8..., userDataDir: C:\Users\V-SPED~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 87a95b10ebb9524c0aed0a1695a5316c
-*** Element info: {Using=xpath, value=//h2[@id='lblCounter']}
-	at portfolio_test.user.TC04_CustomerEvidenceTest.verifyEnergyandResourcesCustomerStoriesSearchButtonOnCustomerEvidence(TC04_CustomerEvidenceTest.java:184)
+Tests run: 11, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 163.188 s <<< FAILURE! - in TestSuite
+VerifyCustomerEvidenceSearchPageFromHomepage(portfolio_test.user.TC02_HomePage)  Time elapsed: 5.532 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "java.time.temporal.TemporalAmount.addTo(java.time.temporal.Temporal)" because "amountToAdd" is null
+	at portfolio_test.user.TC02_HomePage.VerifyCustomerEvidenceSearchPageFromHomepage(TC02_HomePage.java:165)
 
-verifyISCloudsOverviewPageFromResourcesMenu(portfolio_test.user.TC06_ResourcesPage)  Time elapsed: 8.095 s  <<< FAILURE!
-org.openqa.selenium.json.JsonException: 
-java.lang.reflect.InvocationTargetException
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'HJNZL000593', ip: '192.168.1.11', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
-Driver info: driver.version: RemoteWebDriver
-	at portfolio_test.user.TC06_ResourcesPage.verifyISCloudsOverviewPageFromResourcesMenu(TC06_ResourcesPage.java:99)
-Caused by: java.lang.reflect.InvocationTargetException
-	at portfolio_test.user.TC06_ResourcesPage.verifyISCloudsOverviewPageFromResourcesMenu(TC06_ResourcesPage.java:99)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'IS Clouds Overview')]"}
-  (Session info: MicrosoftEdge=112.0.1722.68)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'HJNZL000593', ip: '192.168.1.11', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 112.0.1722.68, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:54382}, msedge: {msedgedriverVersion: 112.0.1722.71 (0dac4e4620b8..., userDataDir: C:\Users\V-SPED~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 53d20e2d294cb89d8b89f7b9a8dd47d0
-*** Element info: {Using=xpath, value=//a[contains(text(),'IS Clouds Overview')]}
-	at portfolio_test.user.TC06_ResourcesPage.verifyISCloudsOverviewPageFromResourcesMenu(TC06_ResourcesPage.java:99)
-
-verifyISSolutionsPlaybookPageFromResourcesMenu(portfolio_test.user.TC06_ResourcesPage)  Time elapsed: 14.862 s  <<< FAILURE!
+VerifyEurekaPageFromHomepage(portfolio_test.user.TC02_HomePage)  Time elapsed: 5.827 s  <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
-	at portfolio_test.user.TC06_ResourcesPage.verifyISSolutionsPlaybookPageFromResourcesMenu(TC06_ResourcesPage.java:206)
+	at portfolio_test.user.TC02_HomePage.VerifyEurekaPageFromHomepage(TC02_HomePage.java:184)
 
