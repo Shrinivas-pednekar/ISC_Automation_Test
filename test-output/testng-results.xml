@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-19T12:39:56 IST" name="Default suite" finished-at="2023-05-19T12:40:15 IST" duration-ms="19049">
+  <suite started-at="2023-05-19T12:58:56 IST" name="Default suite" finished-at="2023-05-19T12:59:39 IST" duration-ms="42118">
     <groups>
     </groups>
-    <test started-at="2023-05-19T12:39:56 IST" name="Default test" finished-at="2023-05-19T12:40:15 IST" duration-ms="19049">
+    <test started-at="2023-05-19T12:58:56 IST" name="Default test" finished-at="2023-05-19T12:59:39 IST" duration-ms="42118">
       <class name="portfolio_test.user.TC01_UserLoginTest">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:portfolio_test.user.TC01_UserLoginTest@2f40e5db]" started-at="2023-05-19T12:39:56 IST" name="initialize" finished-at="2023-05-19T12:40:12 IST" duration-ms="15641" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:portfolio_test.user.TC01_UserLoginTest@2f40e5db]" started-at="2023-05-19T12:58:56 IST" name="initialize" finished-at="2023-05-19T12:59:35 IST" duration-ms="38759" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="loginPageTitleTest()[pri:1, instance:portfolio_test.user.TC01_UserLoginTest@2f40e5db]" started-at="2023-05-19T12:40:12 IST" name="loginPageTitleTest" finished-at="2023-05-19T12:40:15 IST" duration-ms="3050" status="PASS">
+        <test-method signature="loginPageTitleTest()[pri:1, instance:portfolio_test.user.TC01_UserLoginTest@2f40e5db]" started-at="2023-05-19T12:59:35 IST" name="loginPageTitleTest" finished-at="2023-05-19T12:59:38 IST" duration-ms="3038" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:portfolio_test.user.TC01_UserLoginTest@2f40e5db]" started-at="2023-05-19T12:40:15 IST" name="teardown" finished-at="2023-05-19T12:40:15 IST" duration-ms="307" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:portfolio_test.user.TC01_UserLoginTest@2f40e5db]" started-at="2023-05-19T12:59:38 IST" name="teardown" finished-at="2023-05-19T12:59:39 IST" duration-ms="285" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

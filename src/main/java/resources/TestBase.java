@@ -40,7 +40,7 @@ public class TestBase {
 		else if (browserName.equalsIgnoreCase("edge"))
 		{
 			//WebDriverManager.edgedriver().setup();
-			System.setProperty("webdriver.edge.driver", "D:\\Automation\\Driver\\edgedriver_win64\\msedgedriver.exe");
+			System.setProperty("webdriver.edge.driver", "D:\\Automation\\Driver\\edgedriver_win64\\msedgedriver112.exe");
 			  EdgeOptions options = new EdgeOptions();
 			  //options.setBinary("C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe");
 			 // options.addArguments("--remote-allow-origins=*");
