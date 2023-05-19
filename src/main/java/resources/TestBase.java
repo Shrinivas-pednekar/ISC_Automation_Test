@@ -15,6 +15,8 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 
 
@@ -34,17 +36,17 @@ public class TestBase {
 		
 		if(browserName.equalsIgnoreCase("chrome"))
 		{
-			//WebDriverManager.chromedriver().setup();
+		WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();		
 		}
 		else if (browserName.equalsIgnoreCase("edge"))
 		{
 			//WebDriverManager.edgedriver().setup();
-			System.setProperty("webdriver.edge.driver", "D:\\Automation\\Driver\\edgedriver_win64\\msedgedriver112.exe");
+			System.setProperty("webdriver.edge.driver", "D:\\Automation\\Driver\\edgedriver_win64\\msedgedriver.exe");
 			  EdgeOptions options = new EdgeOptions();
 			  options.setBinary("C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe");
-			 // options.addArguments("--remote-allow-origins=*");
-		        //options.addArguments("--headless=new");
+			 options.addArguments("--remote-allow-origins=*");
+		        options.addArguments("--headless=new");
 			  options.addArguments("--disable-dev-shm-usage");
 
 		        driver = new EdgeDriver(options);
