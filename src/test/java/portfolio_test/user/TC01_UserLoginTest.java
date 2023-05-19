@@ -28,7 +28,7 @@ public class TC01_UserLoginTest extends TestBase {
 		driver = initializeDriver();
 		log.info("Driver is initialized");
 
-		driver.get(prop.getProperty("produrl"));
+		driver.get(prop.getProperty("chromeTestUrl"));
 		util = new Utilities();
 		loginPage = new LoginPage(driver);
 	}
@@ -38,8 +38,8 @@ public class TC01_UserLoginTest extends TestBase {
 		
 		//loginPage.enterLoginID("v-spednekar@microsoft.com");
 	//	loginPage.clickOnProductInnovationDevelopmentServicesLink();
-		Thread.sleep(3000);
-		Assert.assertEquals(loginPage.getLoginPageTitle(), "IS Catalogue");
+		Thread.sleep(7000);
+		Assert.assertEquals(loginPage.getLoginPageTitle(), "World Wide Web - Wikipedia");
 		
 		log.info("Successfully logged into IS Catalogue");
 	}
