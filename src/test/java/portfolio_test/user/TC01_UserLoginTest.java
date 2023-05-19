@@ -38,8 +38,10 @@ public class TC01_UserLoginTest extends TestBase {
 		
 		//loginPage.enterLoginID("v-spednekar@microsoft.com");
 	//	loginPage.clickOnProductInnovationDevelopmentServicesLink();
+
 		Thread.sleep(3000);
 		Assert.assertEquals(loginPage.getLoginPageTitle(), "IS Catalogue");
+
 		
 		log.info("Successfully logged into IS Catalogue");
 	}
