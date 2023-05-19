@@ -42,7 +42,7 @@ public class TestBase {
 			//WebDriverManager.edgedriver().setup();
 			System.setProperty("webdriver.edge.driver", "D:\\Automation\\Driver\\edgedriver_win64\\msedgedriver112.exe");
 			  EdgeOptions options = new EdgeOptions();
-			  //options.setBinary("C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe");
+			  options.setBinary("C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe");
 			 // options.addArguments("--remote-allow-origins=*");
 		        //options.addArguments("--headless=new");
 			  options.addArguments("--disable-dev-shm-usage");
