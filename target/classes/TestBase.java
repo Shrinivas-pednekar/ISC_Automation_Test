@@ -45,6 +45,8 @@ public class TestBase {
 			  //options.setBinary("C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe");
 			 // options.addArguments("--remote-allow-origins=*");
 		        //options.addArguments("--headless=new");
+			  options.addArguments("--disable-dev-shm-usage");
+
 		        driver = new EdgeDriver(options);
 			   // driver = new EdgeDriver();
 			 
