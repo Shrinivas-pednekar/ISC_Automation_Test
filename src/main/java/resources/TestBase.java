@@ -16,7 +16,7 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public class TestBase {
 
@@ -34,15 +34,16 @@ public class TestBase {
 		
 		if(browserName.equalsIgnoreCase("chrome"))
 		{
-			WebDriverManager.chromedriver().setup();
+			//WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();		
 		}
 		else if (browserName.equalsIgnoreCase("edge"))
 		{
-			WebDriverManager.edgedriver().setup();
+			//WebDriverManager.edgedriver().setup();
+			System.setProperty("webdriver.edge.driver", "D:\\Automation\\Driver\\edgedriver_win64\\msedgedriver.exe");
 			  EdgeOptions options = new EdgeOptions();
 			  //options.setBinary("C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe");
-			  options.addArguments("--remote-allow-origins=*");
+			 // options.addArguments("--remote-allow-origins=*");
 		        //options.addArguments("--headless=new");
 		        driver = new EdgeDriver(options);
 			   // driver = new EdgeDriver();
@@ -51,7 +52,7 @@ public class TestBase {
 		}
 		else if (browserName.equalsIgnoreCase("ie"))
 		{
-			WebDriverManager.iedriver().setup();
+		//	WebDriverManager.iedriver().setup();
 			driver = new InternetExplorerDriver();
 		}
 		
