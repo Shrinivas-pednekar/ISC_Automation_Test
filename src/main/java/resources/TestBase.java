@@ -41,12 +41,12 @@ public class TestBase {
 		}
 		else if (browserName.equalsIgnoreCase("edge"))
 		{
-			//WebDriverManager.edgedriver().setup();
-			System.setProperty("webdriver.edge.driver", "D:\\Automation\\Driver\\edgedriver_win64\\msedgedriver.exe");
+			WebDriverManager.edgedriver().setup();
+			//System.setProperty("webdriver.edge.driver", "D:\\Automation\\Driver\\edgedriver_win64\\msedgedriver.exe");
 			  EdgeOptions options = new EdgeOptions();
-			  options.setBinary("C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe");
+			 // options.setBinary("C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe");
 			 options.addArguments("--remote-allow-origins=*");
-		        options.addArguments("--headless=new");
+		       options.addArguments("--headless=new");
 			  options.addArguments("--disable-dev-shm-usage");
 
 		        driver = new EdgeDriver(options);
